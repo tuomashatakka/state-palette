@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>interface.share</title>
+  <g id="share">
+    <g>
+      <path d="M240,40a40,40,0,1,0,40,40A40,40,0,0,0,240,40Z" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+      <path d="M209.1279,105.436a39.8167,39.8167,0,0,1-8.825-20.5875L107.6941,131.153a39.9866,39.9866,0,1,0,11.9424,34.1718,39.6806,39.6806,0,0,0-.7661-14.76Z" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+      <path d="M271.3142,218.3a39.9381,39.9381,0,0,0-59.6345-5.5645l-92.0432-47.4106a39.8171,39.8171,0,0,1-9.08,20.4758l89.7156,46.2119A40,40,0,1,0,271.3142,218.3Z" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+    </g>
+  </g>
+</svg>

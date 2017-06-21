@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>bell-outline</title>
+  <g id="bell">
+    <g>
+      <path d="M270,214.6s-36.6662-18.2889-36.6662-54.8667V123.1557S233.3338,50,160,50s-73.3338,73.1557-73.3338,73.1557v36.5778C86.6662,196.3113,50,214.6,50,214.6Z" style="fill: none;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+      <path d="M115.3769,222.4966c-.0612.955-.1035,1.9151-.1035,2.8855a44.7267,44.7267,0,0,0,89.4532,0c0-.97-.0423-1.93-.1035-2.8855" style="fill: none;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+    </g>
+  </g>
+</svg>

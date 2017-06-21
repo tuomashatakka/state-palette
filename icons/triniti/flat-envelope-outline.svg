@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1a1a1a;
+      }
+    </style>
+  </defs>
+  <title>flat-envelope-outline</title>
+  <g id="Layer_16" data-name="Layer 16">
+    <g>
+      <polygon class="cls-1" points="20 244 22 244 22 78 298 78 298 242 20 242 20 244 22 244 20 244 20 246 302 246 302 74 18 74 18 246 20 246 20 244"/>
+      <polygon class="cls-1" points="300 76 298.899 74.33 160 165.912 26.667 78 300 78 300 76 298.899 74.33 300 76 300 74 20 74 18.899 77.67 160 170.703 301.101 77.67 300 74 300 76"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1a1a1a;
+      }
+    </style>
+  </defs>
+  <title>flat-note-filled</title>
+  <g id="Layer_16" data-name="Layer 16">
+    <g>
+      <path class="cls-1" d="M50,280V60H180L280,160V280ZM180,140l100,20L180,60Z"/>
+      <path class="cls-1" d="M50,280h2V62H179.1715L278,160.8284V278H50v2h0v2H282V159.1713L180.8284,58H48V282h2ZM180,140l-.3923,1.9611,100,20,1.8065-3.3754-100-100L178,60v81.64l1.6077.3215L180,140h2V64.8282l91.9149,91.915-93.5226-18.7045L180,140h0Z"/>
+    </g>
+  </g>
+</svg>

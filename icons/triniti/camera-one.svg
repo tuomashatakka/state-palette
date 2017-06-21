@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>camera-one</title>
+  <g id="camera">
+    <path d="M160,94.7826V75.2173H70V94.7826H40v150H280v-150ZM124.5068,138.21H83.0059V117.98h41.501ZM195,210a45,45,0,1,1,45-45A45,45,0,0,1,195,210Zm35-45a35,35,0,1,1-35-35A35,35,0,0,1,230,165Z" style="fill: #333;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+  </g>
+</svg>

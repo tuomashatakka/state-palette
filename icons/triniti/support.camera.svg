@@ -1,0 +1,5 @@
+<svg id="camera" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>support.camera</title>
+  <path d="M160,99.31V81.1035H76.2483V99.31H48.3311V238.8965H271.6689V99.31Zm-33.029,40.4123h-38.62V120.8976h38.62Zm65.5991,66.806a41.8758,41.8758,0,1,1,41.8758-41.8758A41.8757,41.8757,0,0,1,192.57,206.5287Z" style="fill: none;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+  <circle cx="192.5701" cy="164.6529" r="23.2643" style="fill: none;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+</svg>

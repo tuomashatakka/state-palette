@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>weather-rain</title>
+  <g id="briefcase">
+    <path id="_Path_" data-name="&lt;Path&gt;" d="M40.0172,129.36C39.5892,140.7185,47.1615,160,62.495,160H243.8859s38.4972.5026,35.9974-36.19-35.9974-36.19-35.9974-36.19-1.5523-35.84-35.9974-52.7776C178.529,20.4048,147.8928,45.397,147.8928,45.397s-28.6381-29.7753-65.8786-6.5132C56.6327,54.7381,64.0155,87.1375,64.0155,87.1375S41.2671,96.1851,40.0172,129.36Z" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+    <path d="M211.1288,277.65a8.5726,8.5726,0,0,1-7.9614-5.3706l-34.2857-85.3958a8.5668,8.5668,0,0,1,15.9166-6.3421l34.2857,85.3958a8.5584,8.5584,0,0,1-7.9551,11.7127Z" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+    <path d="M152.8622,226.4123a8.5752,8.5752,0,0,1-7.9154-5.257l-14.2854-34.1583a8.567,8.567,0,0,1,15.8245-6.5694l14.2854,34.1583a8.557,8.557,0,0,1-7.9091,11.8264Z" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+    <path d="M241.4285,256.7752a8.5742,8.5742,0,0,1-7.9687-5.39l-25.7143-64.5211a8.5673,8.5673,0,0,1,15.9333-6.3025l25.7143,64.5211a8.5581,8.5581,0,0,1-7.9646,11.6929Z" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+  </g>
+</svg>

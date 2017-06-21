@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>envelope-outline</title>
+  <g id="envelope">
+    <path d="M20,244V76H300V244ZM20,76l140,92.3077L300,76Z" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+  </g>
+</svg>

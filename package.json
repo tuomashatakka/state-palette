@@ -1,0 +1,15 @@
+{
+  "name": "stateful",
+  "main": "./src/index",
+  "version": "0.0.0",
+  "description": "Customize Atom's git state colors and icons with ease!",
+  "keywords": ["state", "color", "palette", "atom", "ide", "custom", "customize"],
+  "repository": "https://github.com/atom/stateful",
+  "license": "MIT",
+  "styles": ["styles/index.less"],
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}

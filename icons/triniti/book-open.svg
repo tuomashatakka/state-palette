@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>book-open</title>
+  <g id="book-open">
+    <g id="fill">
+      <g>
+        <path d="M180,270s-10,5-20,5-20-5-20-5L40,232l-5,8,105,40s10,5,20,5,20-5,20-5l95-52-5-7.9993Z" style="fill: #333"/>
+        <polygon points="275 228 275 52 270 40.001 270 220.001 275 228" style="fill: #333"/>
+        <polygon points="35 240 35 64 40 52 40 232 35 240" style="fill: #333"/>
+      </g>
+      <g>
+        <path d="M180,270s-10,5-20,5-20-5-20-5L40,232l-5,8,105,40s10,5,20,5,20-5,20-5l95-52-5-7.9993Z" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+        <polygon points="275 228 275 52 270 40.001 270 220.001 275 228" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+        <polygon points="35 240 35 64 40 52 40 232 35 240" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+      </g>
+    </g>
+    <path id="outline" d="M140,90,40,52V232l100,38s10,5,20,5V95C150,95,140,90,140,90Z" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+    <path id="outline-2" data-name="outline" d="M220,68.1821V200l-43.0769,62.3083v-.0007S168.4615,271.1538,160,275c10,0,20-5,20-5v.0007l90-50v-180Z" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+    <path id="outline-3" data-name="outline" d="M176.9231,82.3079v-.0007S168.4615,91.1533,160,95V275c8.4615-3.8462,16.9231-12.6924,16.9231-12.6924v.0007L220,200V20Z" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+  </g>
+</svg>

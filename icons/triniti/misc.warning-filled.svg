@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>misc.warning-filled</title>
+  <g id="box">
+    <path d="M160,44.9841,44.5115,245.0159H275.4885ZM160,220a5,5,0,1,1,5-5A5,5,0,0,1,160,220Zm-5-30V100h10v90Z" style="fill: #333;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+  </g>
+</svg>

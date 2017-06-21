@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1a1a1a;
+      }
+    </style>
+  </defs>
+  <title>flat-music-play-pause</title>
+  <g id="Layer_16" data-name="Layer 16">
+    <g>
+      <path class="cls-1" d="M35,60l-2.0283,3.4477L197.1106,160,39,253.0062V60H35l-2.0283,3.4477L35,60H31V260a4,4,0,0,0,6.0281,3.4476l170-100a4,4,0,0,0,0-6.8954l-170-100A4,4,0,0,0,31,60Z"/>
+      <path class="cls-1" d="M225,60h-4V260a4,4,0,0,0,4,4h20a4,4,0,0,0,4-4V60a4,4,0,0,0-4-4H225a4,4,0,0,0-4,4h4v4h16V256H229l0-196h-4v0Z"/>
+      <path class="cls-1" d="M265,60h-4V260a4,4,0,0,0,4,4h20a4,4,0,0,0,4-4V60a4,4,0,0,0-4-4H265a4,4,0,0,0-4,4h4v4h16V256H269l0-196h-4v0Z"/>
+    </g>
+  </g>
+</svg>

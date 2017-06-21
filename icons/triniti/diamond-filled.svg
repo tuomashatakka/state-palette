@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>diamond-filled</title>
+  <g id="diamond">
+    <path d="M270,110,160,260l44-150ZM237,70H182l22,40h66Z" style="fill: #333;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+    <path d="M116,110l44,150L50,110Zm0,0,44,150,44-150ZM83,70,50,110h66l22-40Zm55,0-22,40h88L182,70Z" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+  </g>
+</svg>

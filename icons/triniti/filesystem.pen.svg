@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>filesystem.pen</title>
+  <g id="undo">
+    <path d="M134.2241,215.2729C99.8059,194.934,90,207.0181,90,207.0181L90.9174,290l72.0947-39.8367S168.6422,235.6118,134.2241,215.2729Z" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+    <path d="M226.1543,56.5837c-36.506-21.5726-50.7415,2.9911-50.7415,2.9911L90,206.9573s9.8059-12.0841,44.2241,8.2549,28.788,34.89,28.788,34.89L248.9678,103.041S262.66,78.1564,226.1543,56.5837Z" style="fill: #333;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+  </g>
+</svg>

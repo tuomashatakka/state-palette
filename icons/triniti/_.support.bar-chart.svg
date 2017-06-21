@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>_.support.bar-chart</title>
+  <g id="console">
+    <path d="M40,282H280v-4H252V110a2,2,0,0,0-2-2H200a2,2,0,0,0-2,2V278H182V50a2,2,0,0,0-2-2H130a2,2,0,0,0-2,2V278H112V150a2,2,0,0,0-2-2H60a2,2,0,0,0-2,2V278H42V40H38V280a2,2,0,0,0,2,2Zm208-4H202l0-166h46Zm-70,0H132l0-226h46Zm-70,0H62V152h46Z" style="fill: #333"/>
+  </g>
+</svg>

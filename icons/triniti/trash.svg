@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>trash</title>
+  <g id="Layer_10" data-name="Layer 10">
+    <rect x="64" y="64" width="192" height="42.6667" rx="6.4444" ry="6.4444" style="fill: #333;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+    <path d="M128,64V54.4444A22.4444,22.4444,0,0,1,150.4444,32h19.1111A22.4444,22.4444,0,0,1,192,54.4444V64" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+    <path d="M85.3333,275.5556V106.6667H234.6667V275.5556A12.4444,12.4444,0,0,1,222.2222,288H97.7778A12.4444,12.4444,0,0,1,85.3333,275.5556ZM122.6667,128V266.6667m37.3333,0V128m37.3333,0V266.6667" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+  </g>
+</svg>

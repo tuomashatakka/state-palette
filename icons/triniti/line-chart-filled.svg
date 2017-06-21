@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>line-chart-filled</title>
+  <g id="charts">
+    <polyline points="40 40 40 280 280 280" style="fill: none;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+    <polygon points="260 110 210 160 190 140 130 190 100 170 40 210 40 280 260 280 260 110" style="fill: #333;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+  </g>
+</svg>

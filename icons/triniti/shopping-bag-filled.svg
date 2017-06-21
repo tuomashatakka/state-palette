@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>shopping-bag-filled</title>
+  <g id="bell">
+    <g>
+      <path d="M210,96.3159h-4C206,55.1525,190,54,160,54s-46,1.1525-46,42.3159h-4C110,50,130,50,160,50S210,50,210,96.3159Z" style="fill: #333"/>
+      <path d="M210,96.3159h-4C206,55.1525,190,54,160,54s-46,1.1525-46,42.3159h-4C110,50,130,50,160,50S210,50,210,96.3159Z" style="fill: #333"/>
+      <path d="M210,96.3159h-4C206,55.1525,190,54,160,54s-46,1.1525-46,42.3159h-4C110,50,130,50,160,50S210,50,210,96.3159Z" style="fill: none;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+    </g>
+    <polygon points="67.368 107.895 55.789 215.965 264.211 215.965 252.632 107.895 67.368 107.895" style="fill: #333;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+    <polygon points="54.632 226.772 50 270 270 270 265.368 226.772 54.632 226.772" style="fill: #333;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+  </g>
+</svg>

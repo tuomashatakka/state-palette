@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>support.display-outline</title>
+  <g id="display">
+    <path d="M170,230v20H150V230Zm-50,20h0ZM40,70V200H280V70Zm0,130H280v30H40Z" style="fill: none;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+  </g>
+</svg>

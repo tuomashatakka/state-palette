@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>misc.box-filled</title>
+  <g id="box">
+    <rect x="58.8807" y="109.4403" width="134.8258" height="134.8258" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+    <polygon points="58.881 109.44 126.294 75.734 261.119 75.734 193.706 109.44 58.881 109.44" style="fill: #333;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+    <polygon points="193.706 244.266 261.119 199.324 261.119 75.734 193.706 109.44 193.706 244.266" style="fill: #333;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+  </g>
+</svg>

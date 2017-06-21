@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>list</title>
+  <g id="list">
+    <circle cx="60" cy="80" r="20" style="fill: #333;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+    <line x1="100" y1="80" x2="260" y2="80" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+    <circle cx="60" cy="160" r="20" style="fill: #333;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+    <line x1="100" y1="160" x2="260" y2="160" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+    <circle cx="60" cy="240" r="20" style="fill: #333;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+    <line x1="100" y1="240" x2="260" y2="240" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+  </g>
+</svg>

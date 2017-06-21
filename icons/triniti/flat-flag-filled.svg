@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1a1a1a;
+      }
+    </style>
+  </defs>
+  <title>flat-flag-filled</title>
+  <g id="Layer_16" data-name="Layer 16">
+    <g>
+      <path class="cls-1" d="M60,280V40m0,120H180V40H60Zm129,4-49,46H251L250,84H189Zm-20,5H127v40Z"/>
+      <path class="cls-1" d="M62,280V40H58V280ZM60,160v2H182V38H58V162h2v-2h2V42H178V158H60v2h0Zm129,4-1.3689-1.4583-49,46L140,212H253.0156l-1.032-130H187v82h2l-1.3689-1.4583L189,164h2V86h57.0156l.9685,122H145.0518L191,164.8656V164Zm-20,5v-2H125v42l3.3792,1.4482,42-40L169,167v2l-1.3794-1.4484L129,204.3333V171h40v-2l-1.3794-1.4484Z"/>
+    </g>
+  </g>
+</svg>

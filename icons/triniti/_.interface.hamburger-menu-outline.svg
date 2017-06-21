@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>_.interface.hamburger-menu-outline</title>
+  <g id="plus">
+    <path d="M250,98H70a2,2,0,0,0,0,4H250a2,2,0,0,0,0-4Z" style="fill: #333"/>
+    <path d="M250,158H70a2,2,0,0,0,0,4H250a2,2,0,0,0,0-4Z" style="fill: #333"/>
+    <path d="M250,218H70a2,2,0,0,0,0,4H250a2,2,0,0,0,0-4Z" style="fill: #333"/>
+  </g>
+</svg>

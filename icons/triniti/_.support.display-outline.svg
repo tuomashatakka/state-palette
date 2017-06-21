@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>_.support.display-outline</title>
+  <g id="console">
+    <path d="M40,232H148v16H120a2,2,0,1,0,0,4h80a2,2,0,0,0,0-4H172V232H280a2,2,0,0,0,2-2V70a2,2,0,0,0-2-2H40a2,2,0,0,0-2,2V230a2,2,0,0,0,2,2Zm112,16V232h16v16Zm126-20H42l0-26H278Zm0-30H42L42,72H278Z" style="fill: #333"/>
+  </g>
+</svg>

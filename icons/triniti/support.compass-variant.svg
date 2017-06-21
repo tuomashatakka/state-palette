@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>support.compass-variant</title>
+  <g id="compass">
+    <path d="M214.3845,64.3845a110,110,0,1,0,41.231,150A110,110,0,0,0,214.3845,64.3845Zm-27.1118,88.119L160,160l-7.4966-27.2728,56.937-59.65Z" style="fill: none;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+    <polygon points="150 40 160 30 170 40 150 40" style="fill: #333;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+  </g>
+</svg>

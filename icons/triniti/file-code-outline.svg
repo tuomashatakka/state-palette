@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>file-code-outline</title>
+  <g id="undo">
+    <g>
+      <g>
+        <path d="M190.8284,38H78V272H242V89.1714Zm45.26,50.9164-34.4714,8.6179-8.6179-51.7071ZM82,268V42H188.3057l10.0776,60.4657L238,92.5615V268Z" style="fill: #1a1a1a"/>
+        <polygon points="141.414 131.414 138.586 128.586 138.586 128.586 107.172 160 138.586 191.414 141.414 188.586 112.828 160 141.414 131.414" style="fill: #1a1a1a"/>
+        <polygon points="171.414 191.414 171.414 191.414 171.414 191.414 171.414 191.414" style="fill: #1a1a1a"/>
+        <polygon points="171.414 128.586 168.586 131.414 197.172 160 168.586 188.586 171.414 191.414 202.828 160 171.414 128.586" style="fill: #1a1a1a"/>
+      </g>
+      <g>
+        <path d="M190.8284,38H78V272H242V89.1714Zm45.26,50.9164-34.4714,8.6179-8.6179-51.7071ZM82,268V42H188.3057l10.0776,60.4657L238,92.5615V268Z" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+        <polygon points="141.414 131.414 138.586 128.586 138.586 128.586 107.172 160 138.586 191.414 141.414 188.586 112.828 160 141.414 131.414" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+        <polygon points="171.414 191.414 171.414 191.414 171.414 191.414 171.414 191.414" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+        <polygon points="171.414 128.586 168.586 131.414 197.172 160 168.586 188.586 171.414 191.414 202.828 160 171.414 128.586" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+      </g>
+    </g>
+  </g>
+</svg>

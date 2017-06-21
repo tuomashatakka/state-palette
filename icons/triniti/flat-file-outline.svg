@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1a1a1a;
+      }
+    </style>
+  </defs>
+  <title>flat-file-outline</title>
+  <g id="Layer_16" data-name="Layer 16">
+    <path class="cls-1" d="M74.667,288h2V34H201.8384L243.333,75.495V286H74.667v2h0v2H247.3328V73.8379L203.4951,30H72.667V290h2Zm128-213.3335v2h42.666l1.4141-3.4142-42.666-42.6665L200.667,32V76.6665h2v-2h2V36.828l35.8376,35.8385H202.667v2h0Z"/>
+  </g>
+</svg>

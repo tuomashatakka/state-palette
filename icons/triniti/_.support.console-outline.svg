@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>_.support.console-outline</title>
+  <g id="console">
+    <g>
+      <path d="M51.4041,241.4246l81.1765-80a2.0005,2.0005,0,0,0,0-2.8491l-81.1768-80-2.8076,2.8491h0L128.3271,160,48.5959,238.5754Z" style="fill: #333"/>
+      <rect x="150" y="238" width="130" height="4" style="fill: #333"/>
+    </g>
+  </g>
+</svg>

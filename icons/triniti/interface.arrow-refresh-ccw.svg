@@ -1,0 +1,5 @@
+<svg id="no-parking" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>interface.arrow-refresh-ccw</title>
+  <path d="M20.5794,107.3551l20.9157,64.2874,0,0C57.8354,9.5852,208.93,8.2458,268.9533,107.3551M51.6261,212.6449c60.0237,99.1093,211.118,97.77,227.458-64.287l0,0L300,212.6449m-66.2329-21.429,45.3172-42.8584" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+  <path d="M86.8123,128.7841,41.4951,171.6425m227.4582-64.2874C208.93,8.2458,57.8354,9.5852,41.4953,171.6421l0,0L20.5794,107.3551M300,212.6449l-20.9157-64.2874,0,0c-16.34,162.057-167.4343,163.3963-227.458,64.287m227.4582-64.2874-45.3172,42.8584" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+</svg>

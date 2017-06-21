@@ -1,0 +1,5 @@
+<svg id="camera" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>support.camera-outline</title>
+  <path d="M160,99.5883V81.4647H76.6318V99.5883H48.8424v138.947H271.1576V99.5883Zm-32.8778,40.2273H88.6793v-18.739h38.4429Zm65.2987,66.5a41.6841,41.6841,0,1,1,41.6841-41.6841A41.684,41.684,0,0,1,192.421,206.3157Z" style="fill: none;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+  <circle cx="192.421" cy="164.6316" r="32.421" style="fill: none;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+</svg>

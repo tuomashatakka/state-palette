@@ -1,0 +1,13 @@
+<svg id="no-parking" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>no-parking-sign-outline</title>
+  <g>
+    <g>
+      <circle cx="160" cy="160" r="120" style="fill: none;stroke: #1a1a1a;stroke-miterlimit: 2;stroke-width: 4.17391304347827px"/>
+      <line x1="76" y1="244" x2="244" y2="76" style="fill: none;stroke: #1a1a1a;stroke-miterlimit: 2;stroke-width: 4.17391304347827px"/>
+    </g>
+    <g>
+      <circle cx="160" cy="160" r="120" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+      <line x1="76" y1="244" x2="244" y2="76" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+    </g>
+  </g>
+</svg>

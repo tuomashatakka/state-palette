@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>support.display</title>
+  <g id="display">
+    <rect x="150" y="230" width="20" height="20" style="fill: #333;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+    <path d="M280,70V200H40V70ZM40,230H280V70H40Z" style="fill: #333;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+    <rect x="120" y="250" width="80" height="4" style="fill: #333;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+  </g>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>file-text-outline</title>
+  <g id="undo">
+    <g>
+      <g>
+        <path d="M190.8284,38H78V272H242V89.1715Zm45.26,50.9163L200,90l-7.0538-44.2254ZM238,268H82V42H188.25L196,100l42-7.6095Z" style="fill: #1a1a1a"/>
+        <path d="M110,92h60a2,2,0,0,0,0-4H110a2,2,0,0,0,0,4Z" style="fill: #1a1a1a"/>
+        <path d="M108,120a2,2,0,0,0,2,2h90a2,2,0,0,0,0-4H110A2,2,0,0,0,108,120Z" style="fill: #1a1a1a"/>
+        <path d="M110,152h30a2,2,0,0,0,0-4H110a2,2,0,0,0,0,4Z" style="fill: #1a1a1a"/>
+        <path d="M190,178H110a2,2,0,0,0,0,4h80a2,2,0,0,0,0-4Z" style="fill: #1a1a1a"/>
+        <path d="M160,208H110a2,2,0,0,0,0,4h50a2,2,0,0,0,0-4Z" style="fill: #1a1a1a"/>
+      </g>
+      <g>
+        <path d="M190.8284,38H78V272H242V89.1715Zm45.26,50.9163L200,90l-7.0538-44.2254ZM238,268H82V42H188.25L196,100l42-7.6095Z" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+        <path d="M110,92h60a2,2,0,0,0,0-4H110a2,2,0,0,0,0,4Z" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+        <path d="M108,120a2,2,0,0,0,2,2h90a2,2,0,0,0,0-4H110A2,2,0,0,0,108,120Z" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+        <path d="M110,152h30a2,2,0,0,0,0-4H110a2,2,0,0,0,0,4Z" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+        <path d="M190,178H110a2,2,0,0,0,0,4h80a2,2,0,0,0,0-4Z" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+        <path d="M160,208H110a2,2,0,0,0,0,4h50a2,2,0,0,0,0-4Z" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>display</title>
+  <g id="display">
+    <g>
+      <g>
+        <rect x="150" y="230" width="20" height="20" style="fill: #333"/>
+        <path d="M280,70V200H40V70ZM40,230H280V70H40Z" style="fill: #333"/>
+      </g>
+      <g>
+        <rect x="150" y="230" width="20" height="20" style="fill: none;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+        <path d="M120,250h0Z" style="fill: none;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+        <path d="M280,70V200H40V70ZM40,230H280V70H40Z" style="fill: none;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+      </g>
+    </g>
+  </g>
+</svg>

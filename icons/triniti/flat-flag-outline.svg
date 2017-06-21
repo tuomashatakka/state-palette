@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1a1a1a;
+      }
+    </style>
+  </defs>
+  <title>flat-flag-outline</title>
+  <g id="Layer_16" data-name="Layer 16">
+    <path class="cls-1" d="M62,280V40H58V280ZM60,160v2H182V38H58V162h2v-2h2V42H178V158H60v2h0Zm120,0-1.4143-1.4143-40,40L140,202H262V78H178v82h2l-1.4143-1.4143L180,160h2V82h76V198H144.8281L182,160.8284V160Zm0,0v-2H138v42l3.4141,1.4142,40-40L180,158v2l-1.4143-1.4143L142,195.1715V162h38v-2l-1.4143-1.4143Z"/>
+  </g>
+</svg>

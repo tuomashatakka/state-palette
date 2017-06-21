@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>communication.paper-plane-filled</title>
+  <g id="paper-plane">
+    <polygon points="260 90 106.957 200 40 180 260 90" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+    <polygon points="220 240 260 90 147.725 215.763 220 240" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+    <polygon points="106.957 200 126.087 240 260 90 106.957 200" style="fill: #333;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+  </g>
+</svg>

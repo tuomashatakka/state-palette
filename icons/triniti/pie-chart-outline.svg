@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>pie-chart-outline</title>
+  <g id="pie-chart">
+    <path d="M253.0769,151.5385A101.5385,101.5385,0,1,0,151.5385,253.0769V151.5385Z" style="fill: none;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+    <path d="M270,168.4615H168.4615V270A101.5385,101.5385,0,0,0,270,168.4615Z" style="fill: none;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+  </g>
+</svg>

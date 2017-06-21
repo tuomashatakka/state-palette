@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>console-outline</title>
+  <g id="console">
+    <polyline points="50 80 131.176 160 50 240" style="fill: none;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+    <line x1="150" y1="240" x2="280" y2="240" style="fill: none;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+  </g>
+</svg>

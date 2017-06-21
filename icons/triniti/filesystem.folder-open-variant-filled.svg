@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>filesystem.folder-open-variant-filled</title>
+  <g id="undo">
+    <path d="M212.7952,100l-.9216-2.9033h-2.999A4.1276,4.1276,0,0,1,212.7952,100Z" style="fill: none"/>
+    <polygon points="142.669 95.869 127.387 80.323 142.669 95.869 142.669 95.869" style="fill: none"/>
+    <path d="M289.5675,84.0322h-53.249l-2.6367-7.2032c-1.2852-4.4863-5.3274-4.571-9.9207-4.571h-86.374l10.282,10.5468c.7725.7858,6.82,1.2274,7.9131,1.2274h66.2915l.9216,2.9033h0L269.7892,235a3.665,3.665,0,0,0,3.5786-2.9882L299.7965,96.71A10.5605,10.5605,0,0,0,289.5675,84.0322Z" style="fill: #333;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+    <path d="M208.8745,97.0967h-64.999l-1.2065-1.2274h0L127.387,80.3226l-7.0378-7.16a4.0839,4.0839,0,0,0-2.9131-1.2275H34.1228A4.18,4.18,0,0,0,30.2041,77.42L83.6912,245.1666a4.1274,4.1274,0,0,0,3.9187,2.8979H259.7891L212.7952,100A4.1276,4.1276,0,0,0,208.8745,97.0967Z" style="fill: #333;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+    <polygon points="212.795 100 259.789 248.065 212.795 100 212.795 100" style="fill: #333;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+    <path d="M145.582,97.0967a4.0845,4.0845,0,0,1-2.9131-1.2274l1.2065,1.2274Z" style="fill: none"/>
+  </g>
+</svg>

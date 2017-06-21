@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>screw-filled</title>
+  <g id="screw">
+    <path d="M134.5763,211.1129l52.8814,29.4435V270l-52.8814-29.4435Zm0-14.7216,52.8814,29.4435V196.3913l-52.8814-29.4435ZM198.78,50H123.6676L100,63.8956V78.6172l23.6676,13.24h10.9086v60.3691l52.8814,29.4435V91.8568H198.78L220,78.6172V63.8956Z" style="fill: #333;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+  </g>
+</svg>

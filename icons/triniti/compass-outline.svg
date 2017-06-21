@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>compass-outline</title>
+  <g id="compass">
+    <path d="M270,160A110,110,0,1,1,160,50,110,110,0,0,1,270,160Zm-110,0,36.6667,18.3333L215,68.3333l-91.6667,73.3333Z" style="fill: none;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+    <polygon points="123.333 141.667 105 251.667 196.667 178.333 160 160 123.333 141.667" style="fill: none;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+  </g>
+</svg>

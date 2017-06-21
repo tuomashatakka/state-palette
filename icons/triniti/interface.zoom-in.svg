@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>interface.zoom-in</title>
+  <g id="magnifying-glass">
+    <g>
+      <path d="M220,130a90,90,0,1,1-90-90A90,90,0,0,1,220,130Zm60,150-85-85" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+      <path d="M130,70V190m60-60H70" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+    </g>
+  </g>
+</svg>

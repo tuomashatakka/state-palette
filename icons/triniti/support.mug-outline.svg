@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>support.mug-outline</title>
+  <g id="bell">
+    <path d="M240,60V217c0,39.25-40,39.25-40,39.25H120C80,256.25,80,217,80,217V60Zm0,157c30,0,40-16.25,40-76.25,0-40-10-50.75-40-50.75" style="fill: none;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+  </g>
+</svg>

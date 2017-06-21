@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>paper-text</title>
+  <g id="undo">
+    <path d="M80,280V40H200l40,40V280ZM200,80h40L200,40ZM100,80h80m-80,40H220M100,160H220M100,200H220M100,240h80" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+  </g>
+</svg>

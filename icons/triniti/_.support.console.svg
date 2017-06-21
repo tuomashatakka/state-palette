@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>_.support.console</title>
+  <g id="console">
+    <g>
+      <path d="M40,48H38V272H282V48H40ZM278,268H42L42,52H278Z" style="fill: #333"/>
+      <polygon points="78.586 218.586 81.414 221.414 141.414 161.414 141.415 161.413 142.828 160 141.415 158.586 141.414 158.586 81.414 98.586 78.586 101.414 78.586 101.414 137.171 160 78.586 218.586" style="fill: #333"/>
+      <rect x="150" y="218" width="100" height="4" style="fill: #333"/>
+    </g>
+  </g>
+</svg>

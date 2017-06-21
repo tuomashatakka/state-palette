@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1a1a1a;
+      }
+    </style>
+  </defs>
+  <title>flat-music-play-filled</title>
+  <g id="Layer_16" data-name="Layer 16">
+    <g>
+      <polygon class="cls-1" points="75 60 245 160 75 260 75 60"/>
+      <polygon class="cls-1" points="75 60 73.986 61.724 241.055 160 77 256.503 77 60 75 60 73.986 61.724 75 60 73 60 73 260 76.014 261.724 248.944 160 76.014 58.276 73 60 75 60"/>
+    </g>
+  </g>
+</svg>

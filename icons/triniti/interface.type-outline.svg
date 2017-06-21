@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>interface.type-outline</title>
+  <g id="alignment">
+    <g>
+      <g>
+        <polyline points="40 240 110 60 180 240" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+        <line x1="70" y1="170" x2="150" y2="170" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+      </g>
+      <g>
+        <path d="M210,120s17.1526-10,30-10c40,0,40,20,40,40v80c0,10,10,10,10,10" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+        <path d="M280,170s-70-20-80,30c-4.3853,21.9265,10,40,30,40,30,0,50-10,50-40Z" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+      </g>
+    </g>
+  </g>
+</svg>

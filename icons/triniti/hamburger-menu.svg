@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>hamburger-menu</title>
+  <g id="hamburger-menu">
+    <path d="M62.53,144.4011H237.9464s12.53,0,12.53,15.5989-12.53,15.5989-12.53,15.5989H62.53S50,175.5989,50,160,62.53,144.4011,62.53,144.4011Z" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+    <path d="M62.53,208.8022H237.9464s12.53,0,12.53,15.5989S237.9464,240,237.9464,240H62.53S50,240,50,224.4011,62.53,208.8022,62.53,208.8022Z" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+    <path d="M62.53,80H237.9464s12.53,0,12.53,15.5989-12.53,15.5989-12.53,15.5989H62.53S50,111.1978,50,95.5989,62.53,80,62.53,80Z" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+  </g>
+</svg>

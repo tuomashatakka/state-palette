@@ -1,0 +1,84 @@
+// @import "ui-variables";
+
+
+@asset-icon-base-uri:       ~'atom://stateful/icons/triniti';
+@asset-icon-type:           'svg';
+
+@state-icon-added:          "plus-circled-filled";
+@state-icon-ignored:        "no-parking-sign-filled";
+@state-icon-modified:       "hummingbird-filled";
+@state-icon-removed:        "trash-filled";
+@state-icon-renamed:        "infinity-filled";
+
+@state-icon-added-path:     ~"url('@{asset-icon-base-uri}/@{state-icon-added}.@{asset-icon-type}')";
+@state-icon-ignored-path:   ~"url('@{asset-icon-base-uri}/@{state-icon-ignored}.@{asset-icon-type}')";
+@state-icon-modified-path:  ~"url('@{asset-icon-base-uri}/@{state-icon-modified}.@{asset-icon-type}')";
+@state-icon-removed-path:   ~"url('@{asset-icon-base-uri}/@{state-icon-removed}.@{asset-icon-type}')";
+@state-icon-renamed-path:   ~"url('@{asset-icon-base-uri}/@{state-icon-renamed}.@{asset-icon-type}')";
+
+@state-color-ignored:  @text-color-subtle;
+@state-color-renamed:  @text-color-info;
+@state-color-added:    @text-color-success;
+@state-color-modified: @text-color-warning;
+@state-color-removed:  @text-color-error;
+
+.status-icon () {
+  &.icon::before {
+    content: "" !important;
+    -webkit-mask-position: center;
+    -webkit-mask-repeat:   no-repeat;
+    -webkit-mask-size:     cover; //120%;
+    -webkit-mask-image:    var(--icon);
+    background-color: var(--color, @text-color) !important;
+    display: inline-block;
+    min-width: 1em !important;
+    min-height: 1em !important }}
+
+[class*='highlight-']::before,
+.icon[class*='status']::before {
+  .status-icon();
+}
+
+.highlight-info,
+.highlight-success,
+.highlight-warning,
+.highlight-error,
+.highlight-subtle,
+.status-added,
+.status-modified,
+.status-renamed,
+.status-removed,
+.status-ignored {
+  .status-icon();
+}
+
+.highlight-success,
+.status-added {
+  --icon: @state-icon-added-path;
+  --color: @state-color-added }
+
+.highlight-highlighted,
+.status-ignored {
+  --icon: @state-icon-ignored-path;
+  --color: @state-color-ignored }
+
+.highlight-warning,
+.status-modified {
+  --icon: @state-icon-modified-path;
+  --color: @state-color-modified }
+
+.highlight-error,
+.status-removed {
+  --icon: @state-icon-removed-path;
+  --color: @state-color-removed }
+
+.highlight-info,
+.status-renamed {
+  --icon: @state-icon-renamed-path;
+  --color: @state-color-renamed }
+
+
+// body, .tab {
+//   font-family: Helvetica Neue !important;
+//   font-weight: 200 !important;
+// }

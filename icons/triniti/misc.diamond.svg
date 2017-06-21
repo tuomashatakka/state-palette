@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>misc.diamond</title>
+  <g id="diamond">
+    <path d="M270,110,160,260,50,110ZM83,70,50,110H270L237,70Zm121,40H116l44,150Zm0,0L182,70H138l-22,40Z" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+  </g>
+</svg>

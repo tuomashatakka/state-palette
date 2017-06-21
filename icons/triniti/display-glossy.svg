@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>display-glossy</title>
+  <g id="display">
+    <path d="M170,170,40,90v30l50,30ZM30,80H290V253.3333H30Z" style="fill: #333;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+    <line x1="105.8333" y1="275" x2="214.1667" y2="275" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+    <rect x="149.1667" y="253.3333" width="21.6667" height="21.6667" style="fill: #333;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+  </g>
+</svg>

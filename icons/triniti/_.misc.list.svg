@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>_.misc.list</title>
+  <g id="cat">
+    <g>
+      <circle cx="60" cy="80" r="21" style="fill: #333"/>
+      <path d="M260,79H100a1,1,0,0,0,0,2H260a1,1,0,0,0,0-2Z" style="fill: #333"/>
+      <circle cx="60" cy="160" r="21" style="fill: #333"/>
+      <path d="M260,159H100a1,1,0,0,0,0,2H260a1,1,0,0,0,0-2Z" style="fill: #333"/>
+      <circle cx="60" cy="240" r="21" style="fill: #333"/>
+      <path d="M260,239H100a1,1,0,0,0,0,2H260a1,1,0,0,0,0-2Z" style="fill: #333"/>
+    </g>
+  </g>
+</svg>

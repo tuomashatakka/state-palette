@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>support.map</title>
+  <g id="cylinder">
+    <polygon points="40 280 40 77.895 120 40 120 242.105 40 280" style="fill: none;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+    <polygon points="200 280 200 77.895 120 40 120 242.105 200 280" style="fill: #333;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+    <polygon points="200 280 200 77.895 280 40 280 242.105 200 280" style="fill: none;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+  </g>
+</svg>

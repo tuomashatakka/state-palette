@@ -1,0 +1,4 @@
+<svg id="message-bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>communication.message-bubble</title>
+  <path d="M160,80c-55.2285,0-100,32.7177-100,73.0769,0,17.112,8.07,32.8371,21.5519,45.29l-6.1673,43.1711,36.5554-24.37A129.4193,129.4193,0,0,0,160,226.1538c55.2285,0,100-32.7177,100-73.0769S215.2285,80,160,80Z" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+</svg>

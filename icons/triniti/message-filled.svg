@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>message-filled</title>
+  <g id="message">
+    <path d="M70,285V255s-30,0-30-30V105s0-30,30-30H250s30,0,30,30V225s0,30-30,30H130Z" style="fill: #333;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+  </g>
+</svg>

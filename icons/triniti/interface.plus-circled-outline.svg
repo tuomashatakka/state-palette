@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>interface.plus-circled-outline</title>
+  <g id="minus">
+    <g>
+      <circle cx="160" cy="160" r="120" transform="translate(-66.2742 160) rotate(-45)" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+      <path d="M160,100V220m60-60H100" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+    </g>
+  </g>
+</svg>

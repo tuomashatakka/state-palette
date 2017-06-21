@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>dots-vertical-filled</title>
+  <g id="dots-horizontal">
+    <circle cx="160" cy="71.818" r="33.0681" style="fill: #333;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+    <circle cx="160" cy="160.0001" r="33.0681" style="fill: #333;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+    <circle cx="160" cy="248.1822" r="33.0681" style="fill: #333;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+  </g>
+</svg>

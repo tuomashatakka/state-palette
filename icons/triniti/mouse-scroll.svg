@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>mouse-scroll</title>
+  <g id="mouse">
+    <path d="M160,200c-10,50,28.4683,62.0447,48.4255,60.6658S270,240,260,210s-60-20-50,10,78.5132,48.7271,59.2566,79.3635" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+    <path d="M160,60c40,0,40,40,40,40v70s0,30-40,30-40-30-40-30V100S120,60,160,60Zm0,20c-5,0-5,7.5-5,7.5v15s0,7.5,5,7.5,5-7.5,5-7.5v-15S165,80,160,80Z" style="fill: #333"/>
+  </g>
+</svg>

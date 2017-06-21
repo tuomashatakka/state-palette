@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>line-chart</title>
+  <g id="charts">
+    <path d="M280,280H40V40M60,210l60-40,30,20,60-50,20,20,50-50" style="fill: none;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+  </g>
+</svg>

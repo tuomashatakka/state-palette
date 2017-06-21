@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>support.graduate-filled</title>
+  <g id="cylinder">
+    <polygon points="166 70 22 118 166 154 310 118 166 70" style="fill: #333;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+    <path d="M70,142l96,24,96-24v60s-24,24-96,24-96-24-96-24Z" style="fill: #333;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+    <path d="M22,214V166c0-24,12-36,12-36" style="fill: none;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+    <polygon points="10 250 22 214 34 250 10 250" style="fill: #333;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+  </g>
+</svg>

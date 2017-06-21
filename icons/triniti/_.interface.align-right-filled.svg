@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>_.interface.align-right-filled</title>
+  <g id="plus">
+    <polygon points="49 80 49 93.308 271 93.308 271 79 49 79 49 80" style="fill: #333"/>
+    <polygon points="109 142.539 271 142.539 271 128.231 109 128.231 109 129.231 109 142.539" style="fill: #333"/>
+    <polygon points="271 177.461 79 177.461 79 178.461 79 191.769 271 191.769 271 177.461" style="fill: #333"/>
+    <polygon points="229 241 271 241 271 226.692 229 226.692 229 227.692 229 241" style="fill: #333"/>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>filesystem.files</title>
+  <g id="undo">
+    <g>
+      <path d="M60,75h96.25L200,120.6522V285H60Zm96.25,0L165,129.7826l35-9.13Z" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+      <path d="M120,35h96.25L260,80.6522V245H200V120L156.25,75H120Zm96.25,0L225,89.7826l35-9.13Z" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+    </g>
+  </g>
+</svg>

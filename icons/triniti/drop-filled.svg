@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>drop-filled</title>
+  <g id="bell">
+    <path d="M160,40s-20,41.7391-40,73.0435c-15.6893,24.5572-40,52.1739-40,93.913S110,280,160,280s80-31.3043,80-73.0435-14.5049-67.3095-40-93.913C170,81.7391,160,40,160,40Z" style="fill: #333;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+  </g>
+</svg>

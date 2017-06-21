@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>filesystem.folder-open-variant-outline</title>
+  <g id="undo">
+    <g>
+      <path d="M226.3185,97.0968l-2.6368-9.2032a10.36,10.36,0,0,0-9.9208-7.571h-86.374l16.4886,16.7742h67.9981l47.9156,150.9677h0a3.6648,3.6648,0,0,0,3.5784-2.9882l26.4289-135.3017a10.5606,10.5606,0,0,0-10.2292-12.6778Z" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+      <path d="M208.8746,97.0968H145.582a4.0845,4.0845,0,0,1-2.9131-1.2276L127.3869,80.3226l-7.0376-7.16a4.0845,4.0845,0,0,0-2.9131-1.2276H34.1228A4.18,4.18,0,0,0,30.2041,77.42L83.6912,245.1666a4.1273,4.1273,0,0,0,3.9188,2.898H259.7892L212.7951,100A4.1274,4.1274,0,0,0,208.8746,97.0968Z" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+    </g>
+  </g>
+</svg>

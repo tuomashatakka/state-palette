@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>filesystem.files-filled</title>
+  <g id="undo">
+    <g>
+      <g>
+        <path d="M59,75h96.25L199,120.6522V285H59Zm96.25,0L164,129.7826l35-9.13Z" style="fill: #333"/>
+        <path d="M121,35h96.25L261,80.6522V245H209V116L159,65H121Zm96.25,0L226,89.7826l35-9.13Z" style="fill: #333"/>
+      </g>
+      <g>
+        <path d="M59,75h96.25L199,120.6522V285H59Zm96.25,0L164,129.7826l35-9.13Z" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+        <path d="M121,35h96.25L261,80.6522V245H209V116L159,65H121Zm96.25,0L226,89.7826l35-9.13Z" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+      </g>
+    </g>
+  </g>
+</svg>

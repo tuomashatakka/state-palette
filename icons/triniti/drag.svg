@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>drag</title>
+  <g id="alignment">
+    <g>
+      <rect x="60" y="60" width="30" height="30" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+      <line x1="75" y1="100" x2="75" y2="210" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+      <line x1="235" y1="100" x2="235" y2="210" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+      <line x1="100" y1="75" x2="210" y2="75" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+      <line x1="100" y1="235" x2="210" y2="235" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+      <polygon points="230 230 240 270 250 260 260 270 270 260 260 250 270 240 230 230" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+      <polyline points="90 235 75 235 75 220" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+      <polyline points="220 75 235 75 235 90" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>bar-chart</title>
+  <g id="charts">
+    <path d="M280,280H40V40M60,150V280h50V150ZM130,50V280h50V50Zm70,60V280h50V110ZM40,280H280M60,150V280h50V150ZM130,50V280h50V50m20,60V280h50V110Z" style="fill: none;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+  </g>
+</svg>

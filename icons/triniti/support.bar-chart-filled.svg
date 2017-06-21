@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>support.bar-chart-filled</title>
+  <g id="charts">
+    <rect x="200" y="110" width="50" height="170" style="fill: #333;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+    <polyline points="280 280 40 280 40 40" style="fill: none;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+    <rect x="60" y="150" width="50" height="130" style="fill: #333;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+    <rect x="130" y="50" width="50" height="230" style="fill: #333;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+    <line x1="40" y1="280" x2="280" y2="280" style="fill: none;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+    <rect x="60" y="150" width="50" height="130" style="fill: #333;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+    <polyline points="130 50 130 280 180 280 180 50" style="fill: #333;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+    <rect x="200" y="110" width="50" height="170" style="fill: none;stroke: #333;stroke-linejoin: round;stroke-width: 4px"/>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>flag-filled</title>
+  <g id="Layer_15" data-name="Layer 15">
+    <line x1="60" y1="280" x2="60" y2="40" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+    <rect x="60" y="40" width="120" height="120" style="fill: #333;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+    <polygon points="189 164 140 210 251 210 250 84 189 84 189 164" style="fill: #333;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+    <polygon points="169 169 127 169 127 209 169 169" style="fill: #333;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+  </g>
+</svg>

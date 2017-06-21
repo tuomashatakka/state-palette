@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 320">
+  <defs>
+    <clipPath id="clip-path">
+      <path d="M190,40H80V270H240V90ZM143.5355,193.5356a5,5,0,0,1-7.0711,0l-30-30a5,5,0,0,1,0-7.0711l30-30h0a5,5,0,1,1,7.071,7.071L117.071,160l26.4645,26.4645A5,5,0,0,1,143.5355,193.5356Zm60-30-30,30h0a5,5,0,0,1-7.0712-7.0712L192.9288,160l-26.4644-26.4644a5,5,0,0,1,7.071-7.0712l30,30a5,5,0,0,1,0,7.0711Z" style="fill: none"/>
+    </clipPath>
+  </defs>
+  <title>filesystem.file-code-filled</title>
+  <g id="undo">
+    <g>
+      <g style="clip-path: url(#clip-path)">
+        <path d="M80,40H190l50,50V270H80Zm108,2,10,60,40-10Z" style="fill: #1a1a1a;stroke: #1a1a1a;stroke-miterlimit: 2;stroke-width: 4px"/>
+      </g>
+      <g style="clip-path: url(#clip-path)">
+        <path d="M80,40H190l50,50V270H80Zm108,2,10,60,40-10Z" style="fill: #333"/>
+      </g>
+      <g style="clip-path: url(#clip-path)">
+        <path d="M80,40H190l50,50V270H80Zm108,2,10,60,40-10Z" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+      </g>
+    </g>
+  </g>
+</svg>

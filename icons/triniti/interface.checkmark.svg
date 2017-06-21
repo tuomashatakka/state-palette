@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>interface.checkmark</title>
+  <g id="checkmark">
+    <g>
+      <polyline points="260 58 120 228 60 178" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+      <path d="M108.35,247.643A100.0041,100.0041,0,0,0,238.0184,99.4506" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+      <path d="M223.9668,85.1375A99.9977,99.9977,0,0,0,60,162" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+    </g>
+  </g>
+</svg>

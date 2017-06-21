@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>envelope-filled</title>
+  <g id="envelope">
+    <polygon points="20 248.375 20 89.125 160 180.125 300 89.125 300 248.375 20 248.375" style="fill: #333;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+    <polygon points="20 71.625 160 162.625 300 71.625 20 71.625" style="fill: #333;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+  </g>
+</svg>

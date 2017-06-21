@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 320">
+  <defs>
+    <clipPath id="clip-path">
+      <path d="M190,40H80V270H240V90ZM110,86h60a4,4,0,0,1,0,8H110a4,4,0,0,1,0-8Zm50,128H110a4,4,0,0,1,0-8h50a4,4,0,0,1,0,8Zm30-30H110a4,4,0,0,1,0-8h80a4,4,0,0,1,0,8Zm-84-34a4,4,0,0,1,4-4h30a4,4,0,0,1,0,8H110A4,4,0,0,1,106,150Zm94-26H110a4,4,0,0,1,0-8h90a4,4,0,0,1,0,8Z" style="fill: none"/>
+    </clipPath>
+  </defs>
+  <title>file-text-filled</title>
+  <g id="undo">
+    <g>
+      <g style="clip-path: url(#clip-path)">
+        <g>
+          <path d="M80,40H190l50,50V270H80Zm108,2,10,60,40-10Z" style="fill: #1a1a1a"/>
+          <path d="M80,40H190l50,50V270H80Zm108,2,10,60,40-10Z" style="fill: none;stroke: #1a1a1a;stroke-miterlimit: 2;stroke-width: 4px"/>
+        </g>
+      </g>
+      <g style="clip-path: url(#clip-path)">
+        <g>
+          <path d="M80,40H190l50,50V270H80Zm108,2,10,60,40-10Z" style="fill: #333"/>
+          <path d="M80,40H190l50,50V270H80Zm108,2,10,60,40-10Z" style="fill: #333"/>
+          <path d="M80,40H190l50,50V270H80Zm108,2,10,60,40-10Z" style="fill: #333"/>
+        </g>
+      </g>
+      <g style="clip-path: url(#clip-path)">
+        <g>
+          <path d="M80,40H190l50,50V270H80Zm108,2,10,60,40-10Z" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+          <path d="M80,40H190l50,50V270H80Zm108,2,10,60,40-10Z" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+          <path d="M80,40H190l50,50V270H80Zm108,2,10,60,40-10Z" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>interface.undo-outline</title>
+  <g id="undo">
+    <path d="M260,180c-40-80-200-20-200-20l20-40L60,160l40,20" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+  </g>
+</svg>

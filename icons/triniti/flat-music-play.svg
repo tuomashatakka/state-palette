@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1a1a1a;
+      }
+    </style>
+  </defs>
+  <title>flat-music-play</title>
+  <g id="Layer_16" data-name="Layer 16">
+    <path class="cls-1" d="M74,60l-2.0283,3.4477L236.11,160,78,253.0062V60H74l-2.0283,3.4477L74,60H70V260a4,4,0,0,0,6.0281,3.4477l170-100a4,4,0,0,0,0-6.8954l-170-100A4,4,0,0,0,70,60Z"/>
+  </g>
+</svg>

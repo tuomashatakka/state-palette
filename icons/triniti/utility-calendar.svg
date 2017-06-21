@@ -1,0 +1,9 @@
+<svg id="calendar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>utility-calendar</title>
+  <g>
+    <path d="M100,86.6667S100,80,105,80s5,6.6667,5,6.6667v6.6667S110,100,105,100s-5-6.6667-5-6.6667Z" style="fill: #333;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+    <path d="M210,86.6667S210,80,215,80s5,6.6667,5,6.6667v6.6667S220,100,215,100s-5-6.6667-5-6.6667Z" style="fill: #333;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+  </g>
+  <path d="M91.46,150.482m64.0618,75.989H85.35v-7.7843l38.8811-31.6929c16.1078-13.1589,23.6991-22.0551,23.6991-34.6583,0-13.7152-9.2572-25.2058-28.6981-25.2058C99.9766,127.13,92.2,138.62,91.46,150.482m78.1823-21.1284h51.8415c6.2949,0,13.3311-.1852,13.3311-.1852l.185.1852c0,.1852-3.5181,5.0041-6.8506,10.935l-48.324,86.1825" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+  <path d="M259.9686,270H60.0314A10.0314,10.0314,0,0,1,50,259.9686V60.0314A10.0314,10.0314,0,0,1,60.0314,50H259.9686A10.0314,10.0314,0,0,1,270,60.0314V259.9686A10.0314,10.0314,0,0,1,259.9686,270ZM50,90H270" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+</svg>

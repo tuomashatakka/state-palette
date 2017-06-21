@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <title>align-center</title>
+  <g id="alignment">
+    <g>
+      <rect x="50" y="80" width="220" height="12.3077" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+      <rect x="80" y="129.2308" width="160" height="12.3077" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+      <rect x="65" y="178.4615" width="190" height="12.3077" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+      <rect x="140" y="227.6923" width="40" height="12.3077" style="fill: none;stroke: #333;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>
+    </g>
+  </g>
+</svg>

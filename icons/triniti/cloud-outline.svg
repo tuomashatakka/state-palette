@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <defs>
+    <style>
+      .Graphic-Style {
+        fill: none;
+        stroke: #1a1a1a;
+        stroke-miterlimit: 2;
+        stroke-width: 4px;
+      }
+    </style>
+  </defs>
+  <title>cloud-outline</title>
+  <g id="Layer_16" data-name="Layer 16">
+    <path id="_Path_" data-name=" Path " class="Graphic-Style" d="M21.4341,220.6175C16.8589,240.569,23.157,260,41.3883,260H257.0606s45.773.672,42.8006-48.3874-42.8006-48.3874-42.8006-48.3874-.5944-45.0271-42.8006-64.5165c-50.9453-23.5247-71.3344,8.0646-71.3344,8.0646S101.9083,81.9072,64.4577,122.902s-14.2669,64.5165-14.2669,64.5165-20.8059.672-28.5338,32.2582Q21.5411,220.1505,21.4341,220.6175Z"/>
+  </g>
+</svg>
