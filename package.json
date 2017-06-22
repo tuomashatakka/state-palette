@@ -3,14 +3,27 @@
   "main": "./src/index",
   "version": "0.0.0",
   "description": "Customize Atom's git state colors and icons with ease!",
-  "keywords": ["state", "color", "palette", "atom", "ide", "custom", "customize"],
+  "keywords": [
+    "state",
+    "color",
+    "palette",
+    "atom",
+    "ide",
+    "custom",
+    "customize"
+  ],
   "repository": "https://github.com/atom/stateful",
   "license": "MIT",
-  "styles": ["styles/index.less"],
+  "styles": [
+    "styles/index.less"
+  ],
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
+    "fs-plus": "^3.0.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
   },
   "optionalDependencies": {},
   "readmeFilename": "README.md"

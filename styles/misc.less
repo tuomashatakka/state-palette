@@ -1,0 +1,21 @@
+
+
+.status-ignored {
+  opacity: 0.675;
+}
+
+
+.list-item[class*='status-'] {
+  &::after {
+    min-height: 1em !important;
+    width:      2em;
+    height:     inherit;
+    opacity:    0.3;
+    transition: 0.3s opacity;
+  }
+  &.selected::after,
+  &.active::after,
+  &:hover::after {
+    opacity: 0.9;
+  }
+}

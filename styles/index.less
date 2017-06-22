@@ -1,6 +1,8 @@
 @import "ui-variables";
 @import "defaults";
 @import "conf";
+@import "misc";
+@import "file-browser";
 
 @stateful-icon-success: @stateful-icon-added;
 @stateful-icon-warning: @stateful-icon-modified;
@@ -42,36 +44,12 @@
 .state-fill(renamed);
 .state-fill(removed);
 .state-fill(ignored);
-.status-ignored {
-  opacity: 0.675;
-}
-
-
-
-.list-item[class*='status-'] {
-  &::after {
-    min-height: 1em !important;
-    width:      2em;
-    height:     inherit;
-    opacity:    0.3;
-    transition: 0.3s opacity;
-  }
-  &.selected::after,
-  &.active::after,
-  &:hover::after {
-    opacity: 0.9;
-  }
-}
-
-
 
 .status-color(@name) {
   --color: var(~"--color-@{name}", ~"@{stateful-color-@{name}}");
 
   &, &::before, & > *, & > *::before {
     color:   var(--color) !important }}
-
-
 
 .status-icon (@name) {
   --icon: ~"url('@{asset-icon-base-uri}/@{stateful-icon-@{name}}.@{asset-icon-type}')";
@@ -85,8 +63,6 @@
     background-color:      var(--color, @text-color) !important;
     content:               "" !important;
     .icon-styles() }}
-
-
 
 .state-fill(@name; @n: 0) {
 

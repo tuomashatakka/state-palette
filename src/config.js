@@ -39,7 +39,7 @@ export function writeLessVariable (fp, config={}) {
     .keys(config[cat] || {})
     .map(key => print(config[cat][key], cat, key))
     .join('\n')
-  let stream = [
+  let stream = [ 
     iterate('icon'),
     iterate('color'),
   ].join('\n')

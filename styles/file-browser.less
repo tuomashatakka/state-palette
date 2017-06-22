@@ -1,0 +1,53 @@
+.xplrr-root small {
+  opacity: 0.5;
+  font-size: 0.75em;
+  font-weight: 500;
+  letter-spacing: -0.05em;
+}
+.xplrr-root {
+  font-size: 1em;
+  position: relative;
+  overflow: hidden;
+  max-height: 100%;
+}
+
+.xplrr-root .directory-view {
+  padding: 1.5em;
+}
+
+.xplrr-root .close-icon::before {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  font-size: 2rem;
+  line-height: 1em;
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+  background: #242226;
+}
+
+.xplrr-root .breadcrumbs {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start !important;
+  align-items: stretch;
+}
+
+.xplrr-root .breadcrumbs li {
+  padding: 0.3em 2.5em 0.3em 1em;
+  position: relative;
+  overflow: initial;
+}
+.xplrr-root .breadcrumbs li::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border: 1px solid;
+  transform: rotate(45deg) translateY(-73%);
+  border-width: 1px 1px 0 0;
+  width: 1em;
+  height: 1em;
+  top: 50%;
+  right: 1em;
+}
