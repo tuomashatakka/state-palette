@@ -1,81 +1,103 @@
-// @import "ui-variables";
+@import "ui-variables";
+@import "defaults";
+@import "conf";
+
+@stateful-icon-success: @stateful-icon-added;
+@stateful-icon-warning: @stateful-icon-modified;
+@stateful-icon-error:   @stateful-icon-removed;
+@text-color-info:       @stateful-color-renamed;
+@text-color-success:    @stateful-color-success;
+@text-color-warning:    @stateful-color-warning;
+@text-color-error:      @stateful-color-error;
+@text-color-added:      @stateful-color-added;
+@text-color-modified:   @stateful-color-modified;
+@text-color-removed:    @stateful-color-removed;
+@text-color-renamed:    @stateful-color-renamed;
+@text-color-ignored:    @stateful-color-ignored;
+
+:root {
+  --color-info:     @stateful-color-info;
+  --color-success:  @stateful-color-success;
+  --color-warning:  @stateful-color-warning;
+  --color-error:    @stateful-color-error;
+  --color-added:    @stateful-color-added;
+  --color-modified: @stateful-color-modified;
+  --color-renamed:  @stateful-color-renamed;
+  --color-removed:  @stateful-color-removed;
+  --color-ignored:  @stateful-color-ignored;
+}
+
+.icon-styles () {
+  min-width:      1.4em !important;
+  min-height:     1.4em !important;
+  display:        inline-block;
+  vertical-align: middle;
+}
+
+.state-fill(success);
+.state-fill(warning);
+.state-fill(error);
+.state-fill(added);
+.state-fill(modified);
+.state-fill(renamed);
+.state-fill(removed);
+.state-fill(ignored);
+.status-ignored {
+  opacity: 0.675;
+}
 
 
-@asset-icon-base-uri:       ~'atom://stateful/icons/triniti';
-@asset-icon-type:           'svg';
 
-@state-icon-added:          "plus-circled-filled";
-@state-icon-ignored:        "no-parking-sign-filled";
-@state-icon-modified:       "hummingbird-filled";
-@state-icon-removed:        "trash-filled";
-@state-icon-renamed:        "infinity-filled";
+.list-item[class*='status-'] {
+  &::after {
+    min-height: 1em !important;
+    width:      2em;
+    height:     inherit;
+    opacity:    0.3;
+    transition: 0.3s opacity;
+  }
+  &.selected::after,
+  &.active::after,
+  &:hover::after {
+    opacity: 0.9;
+  }
+}
 
-@state-icon-added-path:     ~"url('@{asset-icon-base-uri}/@{state-icon-added}.@{asset-icon-type}')";
-@state-icon-ignored-path:   ~"url('@{asset-icon-base-uri}/@{state-icon-ignored}.@{asset-icon-type}')";
-@state-icon-modified-path:  ~"url('@{asset-icon-base-uri}/@{state-icon-modified}.@{asset-icon-type}')";
-@state-icon-removed-path:   ~"url('@{asset-icon-base-uri}/@{state-icon-removed}.@{asset-icon-type}')";
-@state-icon-renamed-path:   ~"url('@{asset-icon-base-uri}/@{state-icon-renamed}.@{asset-icon-type}')";
 
-@state-color-ignored:  @text-color-subtle;
-@state-color-renamed:  @text-color-info;
-@state-color-added:    @text-color-success;
-@state-color-modified: @text-color-warning;
-@state-color-removed:  @text-color-error;
 
-.status-icon () {
+.status-color(@name) {
+  --color: var(~"--color-@{name}", ~"@{stateful-color-@{name}}");
+
+  &, &::before, & > *, & > *::before {
+    color:   var(--color) !important }}
+
+
+
+.status-icon (@name) {
+  --icon: ~"url('@{asset-icon-base-uri}/@{stateful-icon-@{name}}.@{asset-icon-type}')";
+
+  .tree-view &.list-item::after,
   &.icon::before {
-    content: "" !important;
     -webkit-mask-position: center;
     -webkit-mask-repeat:   no-repeat;
-    -webkit-mask-size:     cover; //120%;
+    -webkit-mask-size:     contain; //120%;
     -webkit-mask-image:    var(--icon);
-    background-color: var(--color, @text-color) !important;
-    display: inline-block;
-    min-width: 1em !important;
-    min-height: 1em !important }}
+    background-color:      var(--color, @text-color) !important;
+    content:               "" !important;
+    .icon-styles() }}
 
-[class*='highlight-']::before,
-.icon[class*='status']::before {
-  .status-icon();
-}
 
-.highlight-info,
-.highlight-success,
-.highlight-warning,
-.highlight-error,
-.highlight-subtle,
-.status-added,
-.status-modified,
-.status-renamed,
-.status-removed,
-.status-ignored {
-  .status-icon();
-}
 
-.highlight-success,
-.status-added {
-  --icon: @state-icon-added-path;
-  --color: @state-color-added }
+.state-fill(@name; @n: 0) {
 
-.highlight-highlighted,
-.status-ignored {
-  --icon: @state-icon-ignored-path;
-  --color: @state-color-ignored }
+  .do(@sl) { @{sl} {
+    .status-color(@name);
+    .status-icon(@name) }}
 
-.highlight-warning,
-.status-modified {
-  --icon: @state-icon-modified-path;
-  --color: @state-color-modified }
+  .do(~".highlight-@{name}");
+  .do(~".status-@{name}");
+  .do(~".is-@{name}") }
 
-.highlight-error,
-.status-removed {
-  --icon: @state-icon-removed-path;
-  --color: @state-color-removed }
-
-.highlight-info,
-.status-renamed {
-  --icon: @state-icon-renamed-path;
-  --color: @state-color-renamed }
 
 
 // body, .tab {
