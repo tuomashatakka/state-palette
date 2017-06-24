@@ -46,13 +46,14 @@
 .state-fill(ignored);
 
 .status-color(@name) {
-  --color: var(~"--color-@{name}", ~"@{stateful-color-@{name}}");
+  // --color: var(~"--color-@{name}", ~"@{stateful-color-@{name}}");
+  --color: var(~"--color-@{name}");
 
   &, &::before, & > *, & > *::before {
     color:   var(--color) !important }}
 
-.status-icon (@name) {
-  --icon: ~"url('@{asset-icon-base-uri}/@{stateful-icon-@{name}}.@{asset-icon-type}')";
+.status-icon(@ico) {
+  --icon: @ico;
 
   .tree-view &.list-item::after,
   &.icon::before {
@@ -66,9 +67,10 @@
 
 .state-fill(@name; @n: 0) {
 
+  @icon: ~"@{stateful-icon-@{name}}";
   .do(@sl) { @{sl} {
     .status-color(@name);
-    .status-icon(@name) }}
+    .status-icon(@icon) }}
 
   .do(~".highlight-@{name}");
   .do(~".status-@{name}");

@@ -1,53 +1,132 @@
-.xplrr-root small {
-  opacity: 0.5;
-  font-size: 0.75em;
-  font-weight: 500;
-  letter-spacing: -0.05em;
-}
-.xplrr-root {
+
+@import "ui-variables";
+@field-key-descriptor: 'stateful.icon.';
+
+.file-explorer.root {
   font-size: 1em;
-  position: relative;
-  overflow: hidden;
+  position:   relative;
+  overflow:   auto;
   max-height: 100%;
+
+  .list-item {
+    border-radius: @component-border-radius;
+    cursor: pointer }
+
+  .list-item:hover {
+    background: @background-color-selected !important }
+
+  .path {
+    opacity:        0.5;
+    font-weight:    500;
+    font-size:      0.75em;
+    letter-spacing: -0.05em }
+
+  .directory-view {
+    position:   static;
+    padding:    @component-padding;
+    margin:     4em 0 0 0;
+    max-height: 100%;
+
+    &.list ol {
+      display: block }
+
+    &.grid ol {
+        display:         flex;
+        flex-flow:       row wrap;
+        align-items:     flex-start;
+        justify-content: flex-start }
+
+    li {
+      padding: ~"calc(0.5 * var(--list-item-text-size, 1em))";
+      line-height: 1.4em;
+      font-size: var(--list-item-text-size, 1em) }
+
+    &.grid ol li.list-item {
+        flex:      1 1;
+        width:     auto;
+        overflow:  hidden;
+        min-width: 12em }}
+
+  .close-icon {
+    z-index:       1000;
+    position:      absolute;
+    padding:       0 !important;
+    margin:        0 !important;
+    top:           1em;
+    right:         1em;
+    width:         4em;
+    height:        4em;
+    line-height:   4em }
+
+  .close-icon::before {
+    font-size:     24px;
+    width:         inherit;
+    height:        inherit;
+    line-height:   inherit;
+    border-radius: 50%;
+    background:    @overlay-border-color;
+    color:         @text-color;
+    transition:    .2s all }
+
+  .close-icon:hover::before {
+    color:         darken(@text-color, 24%);
+    background:    lighten(@overlay-border-color, 5%) }
+
+  .breadcrumbs {
+    position:    absolute;
+    top:         @component-padding;
+    left:        @component-padding;
+    right:       @component-padding;
+    height:      4em;
+    line-height: 3em;
+    display:     flex;
+    flex-flow:   row nowrap;
+    align-items: stretch;
+    justify-content: flex-start !important;
+
+    li {
+      cursor:   pointer;
+      overflow: initial;
+      position: relative;
+      padding:  0.5em 1em 0.5em 4em;
+      line-height: inherit;
+      box-sizing: content-box;
+      background:    @pane-item-background-color !important;
+      border-radius: @component-border-radius;
+
+      &:last-of-type {
+        color: @text-color-highlight;}
+
+      &:last-of-type,
+      &:hover {
+        background: @background-color-selected !important }
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        border: 1px solid;
+        transform: rotate(45deg) translateY(-73%);
+        border-width: 1px 1px 0 0;
+        width: 1em;
+        height: 1em;
+        top: 50%;
+        left: 1em; }}}
 }
 
-.xplrr-root .directory-view {
-  padding: 1.5em;
-}
 
-.xplrr-root .close-icon::before {
-  position: absolute;
-  top: 1em;
-  right: 1em;
-  font-size: 2rem;
-  line-height: 1em;
-  border-radius: 50%;
-  margin: 0;
-  padding: 0;
-  background: #242226;
-}
+atom-text-editor[id^=@{field-key-descriptor}] {
+  cursor:        pointer !important;
+  transition:    .3s background, color;
+  font-family:   @font-family;
+  background:    lighten(@base-background-color, 5%) !important;
 
-.xplrr-root .breadcrumbs {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start !important;
-  align-items: stretch;
-}
+  &:hover {
+    background:  lighten(@base-background-color, 10%) !important }
 
-.xplrr-root .breadcrumbs li {
-  padding: 0.3em 2.5em 0.3em 1em;
-  position: relative;
-  overflow: initial;
-}
-.xplrr-root .breadcrumbs li::after {
-  content: "";
-  display: block;
-  position: absolute;
-  border: 1px solid;
-  transform: rotate(45deg) translateY(-73%);
-  border-width: 1px 1px 0 0;
-  width: 1em;
-  height: 1em;
-  top: 50%;
-  right: 1em;
-}
+  &::before {
+    // content: attr(id);
+    content:     "\f016";
+    padding:     0 @component-padding / 2;
+    font-family: 'Octicons Regular';
+    display:     block }}

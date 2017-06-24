@@ -1,16 +1,31 @@
 'use babel'
 
 import filesystem from 'fs'
+import { extname } from 'path'
+import { getBase64FromImageUrl } from './utils'
 
-function resolveValue (val) {
+async function resolveValue (val) {
   if (!val)
-    return ''
-  if (val.toJSON)
-    return val.toJSON()
-  if (val.toJS)
-    return val.toJS()
-  if (val.toString)
-    return val.toString()
+    val = ''
+  else if (val.toJSON)
+    val = val.toJSON()
+  else if (val.toJS)
+    val = val.toJS()
+  else if (val.toString)
+    val = val.toString()
+
+  if (val.search('/') > -1) {
+    let ext = extname(val)
+    try {
+      let data = await getBase64FromImageUrl(val)
+      val = `url("data:image/${ext};base64,${data}")`
+    }
+    catch (data) {
+      val = `"${data}"`
+    }
+  }
+  else if(!val.startsWith('#'))
+    val = `url('atom://stateful/icons/triniti/${val}.svg')`
   return val
 }
 
@@ -30,32 +45,39 @@ function applyCss (path) {
   return src
 }
 
-export function writeLessVariable (fp, config={}) {
+export async function writeLessVariable (fp, config={}) {
 
-  console.warn("ARGUMENTS PASSED TO writeLessVariable", arguments)
-
-  const print = (val, ...key) => `${prefix(key)}${resolveValue(val)};`
-  const iterate = cat => Object
-    .keys(config[cat] || {})
-    .map(key => print(config[cat][key], cat, key))
-    .join('\n')
-  let stream = [ 
-    iterate('icon'),
-    iterate('color'),
-  ].join('\n')
-
-  console.info(`Writing the less config
-    to path ${fp}
-    ----------------
-    ${stream}`)
-  try {
-    filesystem.writeFile(fp, stream + '\n', 'utf8', err => err ?
-      error(err, "Writing less variables to a file failed") :
-      applyCss(fp))
+  async function print (val, ...key) {
+    let value = await resolveValue(val)
+    return `${prefix(key)}${value};`
   }
-  catch(e) {
-    error(e, "Writing less variable failed") }
 
+  async function iterate (cat) {
+    let promises = Object
+      .keys(config[cat] || {})
+      .map(key => print(config[cat][key], cat, key))
+
+    return Promise
+      .all(promises)
+  }
+
+  let stream = [].concat(
+    await iterate('color'),
+    await iterate('icon'))
+
+  whenResolved(stream.join("\n"))
+  function whenResolved (stream) {
+    console.info(`Writing the less config
+      to path ${fp}\n---------------------------------\n${stream}`)
+    try {
+      filesystem.writeFile(fp, stream + '\n', 'utf8', err => err ?
+        error(err, "Writing less variables to a file failed") :
+        applyCss(fp))
+    }
+    catch(e) {
+      error(e, "Writing less variable failed") }
+
+  }
 }
 
 export function error (e, ...msg) {
