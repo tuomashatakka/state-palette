@@ -1,12 +1,21 @@
 
 @import "ui-variables";
 @field-key-descriptor: 'stateful.icon.';
+@outer-space: 18vh;
+@component-padding: 0.8em;
+@header-height: 4em;
+@footer-height: 4em;
+
+atom-panel.modal {
+  left: 50vw !important;
+
+}
 
 .file-explorer.root {
   font-size: 1em;
   position:   relative;
-  overflow:   auto;
-  max-height: 100%;
+  box-sizing: border-box;
+  height:     100vh - @outer-space * 2;
 
   .list-item {
     border-radius: @component-border-radius;
@@ -21,10 +30,20 @@
     font-size:      0.75em;
     letter-spacing: -0.05em }
 
+  .directory-content {
+    overflow: auto;
+    height:   auto;
+    position: absolute;
+    top:      @component-padding + @header-height;
+    bottom:   @component-padding + @footer-height;
+    left:     @component-padding;
+    right:    @component-padding;
+  }
+
   .directory-view {
     position:   static;
     padding:    @component-padding;
-    margin:     4em 0 0 0;
+    margin:     @component-padding;
     max-height: 100%;
 
     &.list ol {
@@ -72,27 +91,54 @@
     color:         darken(@text-color, 24%);
     background:    lighten(@overlay-border-color, 5%) }
 
+  .btn-toolbar {
+    position: absolute;
+    padding:  @component-padding;
+    margin:   0;
+    bottom:   0;
+    right:    0;
+    left:     0;
+    height:      5em;
+    line-height: 2em;
+
+    .btn {
+      line-height: 3em;
+      height:      3em;
+      margin:   0;
+      top:      0;
+      position:   static;
+      box-sizing: border-box;
+      display:    inline-block;
+      vertical-align: middle;
+    }
+  }
+
   .breadcrumbs {
     position:    absolute;
-    top:         @component-padding;
-    left:        @component-padding;
-    right:       @component-padding;
-    height:      4em;
-    line-height: 3em;
+    top:         0;
+    left:        0; //@component-padding;
+    right:       0; //@component-padding;
+    margin:      0;
+    padding:     0;
+    height:      @header-height;
+    line-height: @header-height;
     display:     flex;
     flex-flow:   row nowrap;
     align-items: stretch;
+    box-sizing:  border-box;
+    overflow: hidden;
     justify-content: flex-start !important;
+    border-radius: @component-border-radius;
 
     li {
       cursor:   pointer;
       overflow: initial;
       position: relative;
-      padding:  0.5em 1em 0.5em 4em;
-      line-height: inherit;
-      box-sizing: content-box;
+      padding:  0 1em 0 4em;
+      line-height:   inherit;
+      box-sizing:    border-box;
       background:    @pane-item-background-color !important;
-      border-radius: @component-border-radius;
+      border-radius: 0;
 
       &:last-of-type {
         color: @text-color-highlight;}

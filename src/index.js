@@ -1,6 +1,7 @@
 'use babel'
 
-import FileExplorer, { FileIcons } from 'file-explorer'
+import FileExplorer from 'file-explorer'
+import { FileIcons } from 'file-explorer'
 import { CompositeDisposable, Disposable } from 'atom'
 import { writeLessVariable } from './config'
 import { resolve, dirname } from 'path'
@@ -53,6 +54,7 @@ function getFileExplorer () {
     let path = resolvePath()
     fileExplorer = new FileExplorer({ path })
   }
+  console.log(fileExplorer)
   return fileExplorer
 }
 
@@ -77,14 +79,14 @@ function observeIconSelectionFields () {
       return
 
     getFileExplorer()
-      .requestFile()
+      .requestFile({})
       .then(path => {
         console.info(path)
         console.info(element)
         console.info(setText)
         setText(element, path)
       })
-      .catch(e => alert(e.message || e))
+      // .catch(e => alert(e.message || e))
   }
 
   views.forEach(view => {
@@ -112,10 +114,9 @@ export default {
   activate: () => {
 
     let fn = conf => writeLessVariable(CONF_PATH, conf)
-    let listener = observeIconSelectionFields()
+    // let listener = observeIconSelectionFields()
     let configChange = atom.config.observe(pack.name, fn)
-    let openExplorer = atom.commands.add('atom-workspace', 'application:open-file-browser', openFileExplorer)
-    subscriptions.add(configChange, listener, openExplorer)
+    subscriptions.add(configChange)//, listener)
   },
 
   deactivate: () => {
@@ -124,15 +125,15 @@ export default {
 
   consumeFileIcons: (service) => {
 
-    const update = () => getFileExplorer().reload()
-
-    FileIcons.setService(service)
-    update()
-
-    return new Disposable(() => {
-      FileIcons.resetService()
-      update()
-    })
+    // const update = () => getFileExplorer()//.reload()
+    //
+    // FileIcons.setService(service)
+    // update()
+    //
+    // return new Disposable(() => {
+    //   FileIcons.resetService()
+    //   update()
+    // })
   },
 
 }

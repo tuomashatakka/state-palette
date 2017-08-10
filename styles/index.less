@@ -30,51 +30,66 @@
 }
 
 .icon-styles () {
-  min-width:      1.4em !important;
-  min-height:     1.4em !important;
-  display:        inline-block;
-  vertical-align: middle;
+  min-height: 1em !important;
+  min-width:  1em !important;
+  height:     1em !important;
+  display:    inline-block !important;
+  vertical-align: middle !important;
 }
 
-.state-fill(success);
-.state-fill(warning);
-.state-fill(error);
-.state-fill(added);
-.state-fill(modified);
-.state-fill(renamed);
-.state-fill(removed);
-.state-fill(ignored);
+.apply-state(success);
+.apply-state(warning);
+.apply-state(error);
+.apply-state(added);
+.apply-state(modified);
+.apply-state(renamed);
+.apply-state(removed);
+.apply-state(ignored);
 
 .status-color(@name) {
   // --color: var(~"--color-@{name}", ~"@{stateful-color-@{name}}");
   --color: var(~"--color-@{name}");
 
   &, &::before, & > *, & > *::before {
-    color:   var(--color) !important }}
+    color:   var(--color) !important }
+    color:   var(--color) !important
+}
 
 .status-icon(@ico) {
   --icon: @ico;
 
-  .tree-view &.list-item::after,
-  &.icon::before {
-    -webkit-mask-position: center;
-    -webkit-mask-repeat:   no-repeat;
-    -webkit-mask-size:     contain; //120%;
-    -webkit-mask-image:    var(--icon);
-    background-color:      var(--color, @text-color) !important;
-    content:               "" !important;
-    .icon-styles() }}
+  &, &::before, & > *, & > *::before {
+    color:   var(--color) !important }
 
-.state-fill(@name; @n: 0) {
+  -webkit-mask-position: center;
+  -webkit-mask-repeat:   no-repeat;
+  -webkit-mask-size:     contain; //120%;
+  -webkit-mask-image:    var(--icon);
+  background-color:      var(--color, @text-color) !important;
+  content:               "" !important;
+  .icon-styles()
+}
 
+.apply-state(@name; @n: 0) {
   @icon: ~"@{stateful-icon-@{name}}";
-  .do(@sl) { @{sl} {
-    .status-color(@name);
-    .status-icon(@icon) }}
+  .col () {
+    .status-color(@name) }
+  .ico () {
+    .col();
+    .status-icon(@icon) }
 
-  .do(~".highlight-@{name}");
-  .do(~".status-@{name}");
-  .do(~".is-@{name}") }
+  .is-@{name},
+  .status-@{name},
+  .icon-diff-@{name},
+  .highlight-@{name} {
+    .col }
+
+  .tree-view .status-@{name}.list-item::after,
+  .status-@{name}.icon.list-item::after,
+  .highlight-@{name}::after,
+  .icon-diff-@{name}::before {
+    .ico }
+}
 
 
 

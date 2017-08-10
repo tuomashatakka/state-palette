@@ -1,10 +1,11 @@
 'use babel'
 
 import filesystem from 'fs'
-import { extname } from 'path'
-import { getBase64FromImageUrl } from './utils'
+import { getBase64FromImageUrl, prefix, error } from './utils'
 
 async function resolveValue (val) {
+
+  // Handle basic types
   if (!val)
     val = ''
   else if (val.toJSON)
@@ -14,11 +15,11 @@ async function resolveValue (val) {
   else if (val.toString)
     val = val.toString()
 
+  // Handle file paths
   if (val.search('/') > -1) {
-    let ext = extname(val)
     try {
       let data = await getBase64FromImageUrl(val)
-      val = `url("data:image/${ext};base64,${data}")`
+      val = `url("${data}")`
     }
     catch (data) {
       val = `"${data}"`
@@ -26,18 +27,11 @@ async function resolveValue (val) {
   }
   else if(!val.startsWith('#'))
     val = `url('atom://stateful/icons/triniti/${val}.svg')`
+
   return val
 }
 
-function prefix (key) {
-  let space
-  key.unshift('stateful')
-  key = key.join('-')
-  space = Array(30-key.length).join(' ')
-  return `@${key}:${space}`
-}
-
-function applyCss (path) {
+function reloadStylesheet (path) {
   let { themes } = atom
   let src = themes.loadLessStylesheet(path)
   themes.applyStylesheet(path, src, 5)
@@ -45,11 +39,34 @@ function applyCss (path) {
   return src
 }
 
+function applyCss (path, content) {
+
+  if (atom.devMode)
+    // eslint-disable-next-line
+    console.info(`Writing the less config to\npath ${path}\n---------------------------------\n\n${content}\n\n`)
+
+  let raise = (err) =>
+    error(err, `Writing less variables to a file ${path} failed`)
+
+  try {
+    content = content + '\n'
+    filesystem.writeFile(
+      path, content, 'utf8', err =>
+      err ? raise(err) : reloadStylesheet(path)) }
+
+  catch(e) {
+    raise(e) }
+
+}
+
 export async function writeLessVariable (fp, config={}) {
 
   async function print (val, ...key) {
+    let { name } = require('../package.json')
     let value = await resolveValue(val)
-    return `${prefix(key)}${value};`
+    let keyPath = [ name, ...key ]
+    let pre = prefix({ keyPath })
+    return `${pre}${value};`
   }
 
   async function iterate (cat) {
@@ -61,41 +78,11 @@ export async function writeLessVariable (fp, config={}) {
       .all(promises)
   }
 
-  let stream = [].concat(
-    await iterate('color'),
-    await iterate('icon'))
+  let stream = []
+    .concat(
+      await iterate('color'),
+      await iterate('icon'))
+    .join("\n")
 
-  whenResolved(stream.join("\n"))
-  function whenResolved (stream) {
-    console.info(`Writing the less config
-      to path ${fp}\n---------------------------------\n${stream}`)
-    try {
-      filesystem.writeFile(fp, stream + '\n', 'utf8', err => err ?
-        error(err, "Writing less variables to a file failed") :
-        applyCss(fp))
-    }
-    catch(e) {
-      error(e, "Writing less variable failed") }
-
-  }
-}
-
-export function error (e, ...msg) {
-
-
-  let { name } = require('../package.json')
-  let title = `${name} Package Error`
-  let description = msg.reduce((str, message) => str + `<p>${message}</p>`, `<h4>${e.message}</h4>`)
-  let buttons = {
-    'Open developer tools': () => atom.openDevTools() }
-
-  if (atom.devMode)
-    // eslint-disable-next-line
-    console.warn(`${name}: ${e}`)
-
-  atom.notifications.addError(title, {
-    description,
-    dismissable: true,
-    buttons: Object.keys(buttons).map(text => ({ text, onDidClick: () => buttons[text]() }))
-  })
+  return applyCss(fp, stream)
 }

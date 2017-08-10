@@ -7,7 +7,7 @@
       "added": {
         "order": 1,
         "type": "string",
-        "default": "plus-circled-outline"
+        "default": "plus-circled-filled"
       },
       "modified": {
         "order": 2,
