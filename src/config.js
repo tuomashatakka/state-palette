@@ -1,7 +1,7 @@
 'use babel'
 
 import filesystem from 'fs'
-import { getBase64FromImageUrl, prefix, error } from './utils'
+import { ASSETS_PATH, getBase64FromImageUrl, prefix, error } from './utils'
 
 async function resolveValue (val) {
 
@@ -25,8 +25,12 @@ async function resolveValue (val) {
       val = `"${data}"`
     }
   }
-  else if(!val.startsWith('#'))
-    val = `url('atom://stateful/icons/triniti/${val}.svg')`
+  else if(!val.startsWith('#')) {
+    let { name } = require('../package.json')
+    let assets   = ASSETS_PATH
+
+    val = `url('atom://${name}/${assets}/${val}.svg')`
+  }
 
   return val
 }

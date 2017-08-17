@@ -1,45 +1,54 @@
+                                                                            /*
+  R a i n b ow
+          S t a te
+                                                                            */
+@import             "declarations";
 @import (reference) "ui-variables";
-@import "defaults";
+@import (reference) "defaults";
 @import (reference) "conf";
-@import "misc";
+@import             "misc";
 // @import "file-browser";
 
-@stateful-icon-success: @stateful-icon-added;
-@stateful-icon-warning: @stateful-icon-modified;
-@stateful-icon-error:   @stateful-icon-removed;
-@text-color-info:       @stateful-color-renamed;
-@text-color-success:    @stateful-color-success;
-@text-color-warning:    @stateful-color-warning;
-@text-color-error:      @stateful-color-error;
-@text-color-added:      @stateful-color-added;
-@text-color-modified:   @stateful-color-modified;
-@text-color-removed:    @stateful-color-removed;
-@text-color-renamed:    @stateful-color-renamed;
-@text-color-ignored:    @stateful-color-ignored;
+// @rainbow-state-icon-success:  @rainbow-state-icon-added;
+// @rainbow-state-icon-warning:  @rainbow-state-icon-modified;
+// @rainbow-state-icon-error:    @rainbow-state-icon-removed;
+@text-color-info:             @rainbow-state-color-renamed;
+@text-color-success:          @rainbow-state-color-success;
+@text-color-warning:          @rainbow-state-color-warning;
+@text-color-error:            @rainbow-state-color-error;
+
+@text-color-added:            @rainbow-state-color-added;
+@text-color-modified:         @rainbow-state-color-modified;
+@text-color-removed:          @rainbow-state-color-removed;
+@text-color-renamed:          @rainbow-state-color-renamed;
+@text-color-ignored:          @rainbow-state-color-ignored;
 
 :root {
-  --color-info:     @stateful-color-info;
-  --color-success:  @stateful-color-success;
-  --color-warning:  @stateful-color-warning;
-  --color-error:    @stateful-color-error;
-  --color-added:    @stateful-color-added;
-  --color-modified: @stateful-color-modified;
-  --color-renamed:  @stateful-color-renamed;
-  --color-removed:  @stateful-color-removed;
-  --color-ignored:  @stateful-color-ignored;
+  --color-info:     @rainbow-state-color-info;
+  --color-success:  @rainbow-state-color-success;
+  --color-warning:  @rainbow-state-color-warning;
+  --color-error:    @rainbow-state-color-error;
+
+  --color-added:    @rainbow-state-color-added;
+  --color-modified: @rainbow-state-color-modified;
+  --color-renamed:  @rainbow-state-color-renamed;
+  --color-removed:  @rainbow-state-color-removed;
+  --color-ignored:  @rainbow-state-color-ignored;
 }
 
 .icon-styles () {
-  min-height: 1em !important;
-  min-width:  1em !important;
-  height:     1em !important;
-  display:    inline-block !important;
+  display:        inline-block !important;
   vertical-align: middle !important;
+  min-height:     1em !important;
+  min-width:      1em !important;
+  height:         1em !important;
 }
 
+.apply-state(info);
 .apply-state(success);
 .apply-state(warning);
 .apply-state(error);
+
 .apply-state(added);
 .apply-state(modified);
 .apply-state(renamed);
@@ -55,7 +64,7 @@
 
 .status-indicator {
   & {
-    .status-color(success) }
+    .status-color(info) }
 
   &.is-disabled {
     .status-color(error) }
@@ -63,33 +72,39 @@
 
 
 
-.status-color(@name) {
-  // --color: var(~"--color-@{name}", ~"@{stateful-color-@{name}}");
-  --color: var(~"--color-@{name}");
+.rainbov () {
+  &, & > * {
+  &, &::before {
+    color: var(--color) !important
+  }}
+}
 
-  &, &::before, & > *, & > *::before {
-    border-color: initial !important;
-    color:   var(--color) !important }
-    color:   var(--color) !important
+.set-color(@name) {
+  --color: var(~"--color-@{name}")
+}
+
+  // --color: var(~"--color-@{name}", ~"@{rainbow-state-color-@{name}}");
+.status-color(@name) {
+  .set-color(@name);
+  .rainbov();
+  &, & > * {
+    border-color: initial !important }
 }
 
 .status-icon(@ico) {
+  .icon-styles();
+  .rainbov();
   --icon: @ico;
-
-  &, &::before, & > *, & > *::before {
-    color:   var(--color) !important }
-
+  content: "" !important;
   -webkit-mask-position: center;
   -webkit-mask-repeat:   no-repeat;
   -webkit-mask-size:     contain; //120%;
   -webkit-mask-image:    var(--icon);
-  background-color:      var(--color, @text-color) !important;
-  content:               "" !important;
-  .icon-styles()
+  background-color: var(--color, @text-color) !important;
 }
 
 .apply-state(@name; @n: 0) {
-  @icon: ~"@{stateful-icon-@{name}}";
+  @icon: ~"@{rainbow-state-icon-@{name}}";
   .col () {
     .status-color(@name) }
   .ico () {

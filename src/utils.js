@@ -2,6 +2,8 @@
 
 import { extname } from 'path'
 
+export const ASSETS_PATH = 'icons/triniti'
+
 export async function getBase64FromImageUrl(url) {
 
   let ext = extname(url).substr(1)
