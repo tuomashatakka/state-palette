@@ -33,7 +33,8 @@ async function resolveValue (val) {
 
 function reloadStylesheet (path) {
   let { themes } = atom
-  let src = themes.loadLessStylesheet(path)
+  let styleEntry = __dirname + '/../styles/index.less'
+  let src = themes.loadLessStylesheet(styleEntry)
   themes.applyStylesheet(path, src, 5)
   themes.refreshLessCache()
   return src
