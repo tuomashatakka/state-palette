@@ -1,11 +1,18 @@
 {
-  "name": "stateful",
+  "name": "rainbow-state",
   "main": "./src/index",
   "version": "0.0.0",
-  "description": "Customize Atom's git state colors and icons with ease!",
+  "description": "16 000 000+ colors at your fingertips. Customize git state colors and icons & general status colors to your heart's content.",
   "keywords": [
     "state",
     "color",
+    "rainbow",
+    "colorful",
+    "UI",
+    "user-interface",
+    "theme",
+    "style",
+    "pastel",
     "palette",
     "atom",
     "ide",
@@ -19,7 +26,7 @@
       }
     }
   },
-  "repository": "https://github.com/atom/stateful",
+  "repository": "https://github.com/atom/state-colors",
   "license": "MIT",
   "styles": [
     "styles/index.less"
