@@ -1,8 +1,8 @@
-@import "ui-variables";
+@import (reference) "ui-variables";
 @import "defaults";
-@import "conf";
+@import (reference) "conf";
 @import "misc";
-@import "file-browser";
+// @import "file-browser";
 
 @stateful-icon-success: @stateful-icon-added;
 @stateful-icon-warning: @stateful-icon-modified;
@@ -46,11 +46,29 @@
 .apply-state(removed);
 .apply-state(ignored);
 
+
+
+// body, .tab {
+//   font-family: Helvetica Neue !important;
+//   font-weight: 200 !important;
+// }
+
+.status-indicator {
+  & {
+    .status-color(success) }
+
+  &.is-disabled {
+    .status-color(error) }
+}
+
+
+
 .status-color(@name) {
   // --color: var(~"--color-@{name}", ~"@{stateful-color-@{name}}");
   --color: var(~"--color-@{name}");
 
   &, &::before, & > *, & > *::before {
+    border-color: initial !important;
     color:   var(--color) !important }
     color:   var(--color) !important
 }
@@ -84,9 +102,33 @@
   .highlight-@{name} {
     .col }
 
-  .tree-view .status-@{name}.list-item::after,
-  .status-@{name}.icon.list-item::after,
-  .highlight-@{name}::after,
+  // Colors
+  // .btn-@{name},
+  // .btn.btn-@{name} {
+  //   border-color: initial !important;
+  //   .col }
+
+  // .text-@{name},
+  // .@{name}-messages,
+  // .highlight-@{name} {
+  //   .col }
+
+  // .label-@{name},
+  // .badge-@{name} {
+  //   .col }
+
+  // .state-@{name},
+
+  // Icons
+  .tree-view .status-@{name}.list-item::after {
+    .ico }
+
+  .status-@{name}.icon.list-item::after {
+    .ico }
+
+  .highlight-@{name}::after  {
+    .ico }
+
   .icon-diff-@{name}::before {
     .ico }
 }
