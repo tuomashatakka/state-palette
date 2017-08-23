@@ -38,7 +38,8 @@ async function resolveValue (val) {
 function reloadStylesheet (path) {
   let { themes } = atom
   let styleEntry = __dirname + '/../styles/index.less'
-  let src = themes.loadLessStylesheet(styleEntry)
+  let src        = themes.loadLessStylesheet(styleEntry)
+
   themes.applyStylesheet(path, src, 5)
   themes.refreshLessCache()
   return src
@@ -86,7 +87,9 @@ export async function writeLessVariable (fp, config={}) {
   let stream = []
     .concat(
       await iterate('color'),
-      await iterate('icon'))
+      await iterate('icon'),
+      await iterate('general')
+    )
     .join("\n")
 
   return applyCss(fp, stream)

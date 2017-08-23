@@ -36,6 +36,11 @@
     "title": "Colors",
     "type": "object",
     "properties": {
+      "primary": {
+        "order": 0,
+        "type": "color",
+        "default": "#423c82"
+      },
       "info": {
         "order": 1,
         "type": "color",
@@ -80,6 +85,19 @@
         "order": 9,
         "type": "color",
         "default": "#847c86"
+      }
+    }
+  },
+  "general": {
+    "type": "object",
+    "order": 0,
+    "title": "General",
+    "properties": {
+      "iconSize": {
+        "type": "number",
+        "min": 75,
+        "max": 200,
+        "default": 140
       }
     }
   }

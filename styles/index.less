@@ -7,16 +7,12 @@
 @import (reference) "defaults";
 @import (reference) "conf";
 @import             "misc";
-// @import "file-browser";
 
-// @rainbow-state-icon-success:  @rainbow-state-icon-added;
-// @rainbow-state-icon-warning:  @rainbow-state-icon-modified;
-// @rainbow-state-icon-error:    @rainbow-state-icon-removed;
-@text-color-info:             @rainbow-state-color-renamed;
+@text-color-primary:          @rainbow-state-color-primary;
+@text-color-info:             @rainbow-state-color-info;
 @text-color-success:          @rainbow-state-color-success;
 @text-color-warning:          @rainbow-state-color-warning;
 @text-color-error:            @rainbow-state-color-error;
-
 @text-color-added:            @rainbow-state-color-added;
 @text-color-modified:         @rainbow-state-color-modified;
 @text-color-removed:          @rainbow-state-color-removed;
@@ -24,17 +20,18 @@
 @text-color-ignored:          @rainbow-state-color-ignored;
 
 :root {
+  --color-primary:  @rainbow-state-color-primary;
   --color-info:     @rainbow-state-color-info;
   --color-success:  @rainbow-state-color-success;
   --color-warning:  @rainbow-state-color-warning;
   --color-error:    @rainbow-state-color-error;
-
   --color-added:    @rainbow-state-color-added;
   --color-modified: @rainbow-state-color-modified;
   --color-renamed:  @rainbow-state-color-renamed;
   --color-removed:  @rainbow-state-color-removed;
   --color-ignored:  @rainbow-state-color-ignored;
 }
+
 
 .icon-styles () {
   display:        inline-block !important;
@@ -44,6 +41,7 @@
   height:         1em !important;
 }
 
+.apply-state(primary);
 .apply-state(info);
 .apply-state(success);
 .apply-state(warning);
@@ -55,27 +53,16 @@
 .apply-state(removed);
 .apply-state(ignored);
 
-
-
-// body, .tab {
-//   font-family: Helvetica Neue !important;
-//   font-weight: 200 !important;
-// }
-
+// Package lists' button groups' highlights
 .status-indicator {
-  & {
-    .status-color(info) }
-
-  &.is-disabled {
-    .status-color(error) }
+  & { .status-color(info) }
+  &.is-disabled { .status-color(error) }
 }
 
-
-
-.rainbov () {
+.rainbov (@prop: color) {
   &, & > * {
   &, &::before {
-    color: var(--color) !important
+    @{prop}: var(--color) !important
   }}
 }
 
@@ -83,10 +70,19 @@
   --color: var(~"--color-@{name}")
 }
 
-  // --color: var(~"--color-@{name}", ~"@{rainbow-state-color-@{name}}");
+// --color: var(~"--color-@{name}", ~"@{rainbow-state-color-@{name}}");
+.status-color-inverse(@name) {
+  .set-color(@name);
+  .rainbov(border-color);
+  .rainbov(background-color);
+  &, & > * {
+    color: initial !important }
+}
+
 .status-color(@name) {
   .set-color(@name);
-  .rainbov();
+  .rainbov(color);
+  .rainbov(border-color);
   &, & > * {
     border-color: initial !important }
 }
@@ -104,35 +100,52 @@
 }
 
 .apply-state(@name; @n: 0) {
+
   @icon: ~"@{rainbow-state-icon-@{name}}";
+
+  .inv () {
+    .status-color-inverse(@name) }
   .col () {
     .status-color(@name) }
   .ico () {
-    .col();
+    .status-color(@name);
     .status-icon(@icon) }
 
-  .is-@{name},
-  .status-@{name},
+  // General text coloring
+  // .status-@{name},
+  .@{name}-messages,
   .icon-diff-@{name},
-  .highlight-@{name} {
+  .text-@{name},
+  .is-@{name} {
     .col }
 
-  // Colors
-  // .btn-@{name},
-  // .btn.btn-@{name} {
-  //   border-color: initial !important;
-  //   .col }
+  .highlight-@{name} {
+    .inv }
 
+  // Badge coloring
+  .state-@{name},
+  .label-@{name},
+  .badge-@{name} {
+    .col }
+
+  // Button coloring
+  .btn.btn-@{name} {
+    border-color: auto !important;
+    .col;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active,
+    &.selected {
+      border-color: auto !important;
+      .inv }
+  }
   // .text-@{name},
   // .@{name}-messages,
   // .highlight-@{name} {
   //   .col }
 
-  // .label-@{name},
-  // .badge-@{name} {
-  //   .col }
-
-  // .state-@{name},
 
   // Icons
   .tree-view .status-@{name}.list-item::after {

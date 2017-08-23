@@ -1,25 +1,29 @@
 
 @import "declarations";
 
-@asset-icon-base-uri:     ~'atom://@{package-name}/icons/triniti';
-@asset-icon-type:         'svg';
-@rainbow-state-icon-added:     "plus-circled-filled";
-@rainbow-state-icon-ignored:   "no-parking-sign-filled";
-@rainbow-state-icon-modified:  "hummingbird-filled";
-@rainbow-state-icon-removed:   "trash-filled";
-@rainbow-state-icon-renamed:   "infinity-filled";
-@rainbow-state-color-fallback: #3c52e4;
-@rainbow-state-color-added:    @rainbow-state-color-fallback;
-@rainbow-state-color-renamed:  @rainbow-state-color-fallback;
-@rainbow-state-color-removed:  @rainbow-state-color-fallback;
-@rainbow-state-color-ignored:  @rainbow-state-color-fallback;
-@rainbow-state-color-modified: @rainbow-state-color-fallback;
+@rainbow-state-color-fallback:  #3c52e4;
+@rainbow-state-color-primary:   #5c55e6;
+@rainbow-state-color-info:      #5774be;
+@rainbow-state-color-success:   #86eb9f;
+@rainbow-state-color-warning:   #d8e77d;
+@rainbow-state-color-error:     #ee407f;
 
-@rainbow-state-color-info:    #5774be;
-@rainbow-state-color-success: #86eb9f;
-@rainbow-state-color-warning: #d8e77d;
-@rainbow-state-color-error:   #ee407f;
-@rainbow-state-icon-info:     "hummingbird";
-@rainbow-state-icon-success:  "checkmark-circled";
-@rainbow-state-icon-warning:  "warning-filled";
-@rainbow-state-icon-error:    "cat";
+@rainbow-state-color-added:     @rainbow-state-color-fallback;
+@rainbow-state-color-renamed:   @rainbow-state-color-fallback;
+@rainbow-state-color-removed:   @rainbow-state-color-fallback;
+@rainbow-state-color-ignored:   @rainbow-state-color-fallback;
+@rainbow-state-color-modified:  @rainbow-state-color-fallback;
+
+@asset-icon-base-uri:           ~'atom://@{package-name}/icons/triniti';
+@asset-icon-type:               'svg';
+@rainbow-state-icon-info:       ~"url(@{asset-icon-base-uri}/hummingbird.svg)";
+@rainbow-state-icon-success:    ~"url(@{asset-icon-base-uri}/checkmark-circled.svg)";
+@rainbow-state-icon-warning:    ~"url(@{asset-icon-base-uri}/warning-filled.svg)";
+@rainbow-state-icon-error:      ~"url(@{asset-icon-base-uri}/cat.svg)";
+@rainbow-state-icon-added:      ~"url(@{asset-icon-base-uri}/plus-circled-filled.svg)";
+@rainbow-state-icon-ignored:    ~"url(@{asset-icon-base-uri}/no-parking-sign-filled.svg)";
+@rainbow-state-icon-modified:   ~"url(@{asset-icon-base-uri}/hummingbird-filled.svg)";
+@rainbow-state-icon-removed:    ~"url(@{asset-icon-base-uri}/trash-filled.svg)";
+@rainbow-state-icon-renamed:    ~"url(@{asset-icon-base-uri}/infinity-filled.svg.svg)";
+
+@rainbow-state-icon-primary:    @rainbow-state-icon-info;
