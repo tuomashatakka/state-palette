@@ -3,6 +3,7 @@
 import { join } from 'path'
 import { CompositeDisposable } from 'atom'
 import { writeLessVariable } from './config'
+import { observeIconSelectionFields } from './icon-picker'
 
 let subscriptions
 
@@ -30,9 +31,9 @@ export function initialize () {
 
 export function activate () {
   let fn = conf => writeLessVariable(CONF_PATH, conf)
-  // let listener = observeIconSelectionFields()
+  let listener = observeIconSelectionFields()
   let configChange = atom.config.observe(pack.name, fn)
-  subscriptions.add(configChange)//, listener)
+  subscriptions.add(configChange, listener)
 }
 
 export function deactivate () {

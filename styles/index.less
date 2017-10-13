@@ -7,6 +7,7 @@
 @import (reference) "defaults";
 @import (reference) "conf";
 @import             "misc";
+@import             "git";
 
 @text-color-primary:          @rainbow-state-color-primary;
 @text-color-info:             @rainbow-state-color-info;
@@ -66,9 +67,6 @@
   }}
 }
 
-.set-color(@name) {
-  --color: var(~"--color-@{name}")
-}
 
 // --color: var(~"--color-@{name}", ~"@{rainbow-state-color-@{name}}");
 .status-color-inverse(@name) {

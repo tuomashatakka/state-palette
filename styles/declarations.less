@@ -1,2 +1,13 @@
 
 @package-name:      "rainbow-state";
+
+.set-color(@name) {
+  --color: var(~"--color-@{name}")
+}
+
+.set-background(@name, @opacity: 1) {
+  & {
+    .set-color(@name);
+    background-color: var(--color) !important;
+  }
+}

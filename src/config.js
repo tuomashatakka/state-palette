@@ -1,6 +1,7 @@
 'use babel'
 
 import filesystem from 'fs'
+import { sep } from 'path'
 import { ASSETS_PATH, getBase64FromImageUrl, prefix, error } from './utils'
 
 async function resolveValue (val) {
@@ -16,7 +17,8 @@ async function resolveValue (val) {
     val = val.toString()
 
   // Handle file paths
-  if (val.search('/') > -1) {
+  console.warn("Resolving", { val, sep })
+  if (val.search(new RegExp(`\\${sep}`)) > -1) {
     try {
       let data = await getBase64FromImageUrl(val)
       val = `url("${data}")`
@@ -31,6 +33,7 @@ async function resolveValue (val) {
 
     val = `url('atom://${name}/${assets}/${val}.svg')`
   }
+  console.warn("Resolved", { val })
 
   return val
 }

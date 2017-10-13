@@ -1,178 +1,376 @@
 
 @import "ui-variables";
-@field-key-descriptor: 'stateful.icon.';
-@outer-space: 18vh;
-@component-padding: 0.8em;
-@header-height: 4em;
-@footer-height: 4em;
+@import 'octicons';
 
-atom-panel.modal {
-  left: 50vw !important;
-
+.file-browser-container {
+  --separator-color: lighten(@overlay-background-color, 10%);
+  --preview-background-color: lighten(@overlay-background-color, 4%);
 }
 
-.file-explorer.root {
-  font-size: 1em;
-  position:   relative;
-  box-sizing: border-box;
-  height:     100vh - @outer-space * 2;
-
-  .list-item {
-    border-radius: @component-border-radius;
-    cursor: pointer }
-
-  .list-item:hover {
-    background: @background-color-selected !important }
-
-  .path {
-    opacity:        0.5;
-    font-weight:    500;
-    font-size:      0.75em;
-    letter-spacing: -0.05em }
-
-  .directory-content {
-    overflow: auto;
-    height:   auto;
-    position: absolute;
-    top:      @component-padding + @header-height;
-    bottom:   @component-padding + @footer-height;
-    left:     @component-padding;
-    right:    @component-padding;
-  }
-
-  .directory-view {
-    position:   static;
-    padding:    @component-padding;
-    margin:     @component-padding;
-    max-height: 100%;
-
-    &.list ol {
-      display: block }
-
-    &.grid ol {
-        display:         flex;
-        flex-flow:       row wrap;
-        align-items:     flex-start;
-        justify-content: flex-start }
-
-    li {
-      padding: ~"calc(0.5 * var(--list-item-text-size, 1em))";
-      line-height: 1.4em;
-      font-size: var(--list-item-text-size, 1em) }
-
-    &.grid ol li.list-item {
-        flex:      1 1;
-        width:     auto;
-        overflow:  hidden;
-        min-width: 12em }}
-
-  .close-icon {
-    z-index:       1000;
-    position:      absolute;
-    padding:       0 !important;
-    margin:        0 !important;
-    top:           1em;
-    right:         1em;
-    width:         4em;
-    height:        4em;
-    line-height:   4em }
-
-  .close-icon::before {
-    font-size:     24px;
-    width:         inherit;
-    height:        inherit;
-    line-height:   inherit;
-    border-radius: 50%;
-    background:    @overlay-border-color;
-    color:         @text-color;
-    transition:    .2s all }
-
-  .close-icon:hover::before {
-    color:         darken(@text-color, 24%);
-    background:    lighten(@overlay-border-color, 5%) }
-
-  .btn-toolbar {
-    position: absolute;
-    padding:  @component-padding;
-    margin:   0;
-    bottom:   0;
-    right:    0;
-    left:     0;
-    height:      5em;
-    line-height: 2em;
-
-    .btn {
-      line-height: 3em;
-      height:      3em;
-      margin:   0;
-      top:      0;
-      position:   static;
-      box-sizing: border-box;
-      display:    inline-block;
-      vertical-align: middle;
-    }
-  }
-
-  .breadcrumbs {
-    position:    absolute;
-    top:         0;
-    left:        0; //@component-padding;
-    right:       0; //@component-padding;
-    margin:      0;
-    padding:     0;
-    height:      @header-height;
-    line-height: @header-height;
-    display:     flex;
-    flex-flow:   row nowrap;
-    align-items: stretch;
-    box-sizing:  border-box;
-    overflow: hidden;
-    justify-content: flex-start !important;
-    border-radius: @component-border-radius;
-
-    li {
-      cursor:   pointer;
-      overflow: initial;
-      position: relative;
-      padding:  0 1em 0 4em;
-      line-height:   inherit;
-      box-sizing:    border-box;
-      background:    @pane-item-background-color !important;
-      border-radius: 0;
-
-      &:last-of-type {
-        color: @text-color-highlight;}
-
-      &:last-of-type,
-      &:hover {
-        background: @background-color-selected !important }
-
-      &::after {
-        content: "";
-        display: block;
-        position: absolute;
-        border: 1px solid;
-        transform: rotate(45deg) translateY(-73%);
-        border-width: 1px 1px 0 0;
-        width: 1em;
-        height: 1em;
-        top: 50%;
-        left: 1em; }}}
-}
-
-
-atom-text-editor[id^=@{field-key-descriptor}] {
-  cursor:        pointer !important;
-  transition:    .3s background, color;
-  font-family:   @font-family;
-  background:    lighten(@base-background-color, 5%) !important;
-
-  &:hover {
-    background:  lighten(@base-background-color, 10%) !important }
+.file-explorer .close-icon {
+  border-radius:    50%;
+  position:         absolute;
+  display:          block;
+  height:           3em;
+  width:            3em;
+  right:            0;
+  top:              0;
+  color:            @text-color;
+  background-color: @button-background-color;
 
   &::before {
-    // content: attr(id);
-    content:     "\f016";
-    padding:     0 @component-padding / 2;
-    font-family: 'Octicons Regular';
-    display:     block }}
+    display: block;
+    line-height: 3em;
+    text-align: center;
+    width: inherit;
+  }
+}
+
+.file-explorer .directory-content {
+  display:    flex;
+  max-height: 50vh;
+
+  .file-browser {
+    flex: 1 0;
+    overflow:   auto;
+  }
+
+  .preview-selection {
+    display: flex;
+    flex: 1 1 33%;
+    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+
+    article.content {
+      padding-left:   1.4em;
+      flex-direction: column;
+      display: flex }
+
+    article > * {
+      padding: 1em;
+      overflow: auto }
+
+    h4 {
+      text-align: center }
+
+    img {
+      max-width: 100%;
+      display: inline-block;
+      background: var(--preview-background-color) }
+
+    audio {
+      width: 100%;
+      height: 4em;
+      --track-color: @text-color-subtle;
+      --color: @text-color;
+      --hover-color: @text-color-highlight;
+
+      &::-webkit-media-controls {
+      }
+      &::-webkit-media-controls-play-button {
+        -webkit-appearance: none;
+        box-sizing:   content-box;
+        width:        0;
+        height:       0;
+        margin:       0.5em 1.5em;
+        border-style: solid;
+        border-color: transparent var(--color);
+        border-width: 0.5em 0 0.5em 0.777em;
+        transition:   .15s border-color;
+        cursor:       pointer;
+      }
+      &::-webkit-media-controls-play-button:hover {
+        border-color: transparent var(--hover-color) }
+      &::-webkit-media-controls-panel {
+        background: transparent;
+      }
+    }
+    video {
+      max-width: 100%;
+    }
+
+    audio,
+    video {
+      &::-webkit-media-controls-current-time-display,
+      &::-webkit-media-controls-time-remaining-display {
+        color: var(--color)
+      }
+      &::-webkit-media-controls-timeline {
+        // -webkit-appearance: none;
+        background-color: var(--track-color);
+      }
+    }
+
+    code.raw {
+      display: block;
+      text-align: left;
+      white-space: pre-line }
+  }
+
+  li.list-item {
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: var(--list-item-text-size) !important;
+  }
+
+  li.list-item .path {
+    display: none;
+  }
+  li.list-item:hover {
+    background-color: @background-color-highlight;
+    color: @text-color-highlight;
+  }
+
+  &.grid {
+
+    .list-group li {
+      flex: 0 1 33%;
+      width: auto;
+      overflow: hidden;
+    }
+
+    .list-group {
+      display: flex;
+      flex-flow: row wrap;
+    }
+  }
+}
+
+.file-explorer .breadcrumbs {
+  justify-content: flex-end;
+  display:         flex;
+  overflow:        hidden;
+  overflow-x:      auto;
+  margin:          0 4em 0 0;
+  padding:         1.4em;
+
+  li {
+    .octicon('chevron-right');
+    cursor: pointer;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+
+    &::before {
+      padding: 0 1em;
+    }
+    &:hover {
+      background: @background-color-highlight;
+    }
+  }
+}
+
+.file-explorer .toolbar {
+  padding: 1.4em 0;
+}
+
+.file-explorer .bottom-toolbar {
+  display:    flex;
+  margin:     1.4em 0 0;
+  padding:    1.4em 2.8em 0;
+  border-top: 0px solid var(--separator-color);
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 15000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.5);
+
+  article.content {
+    max-height: 90%;
+    max-width:  80%;
+    width:      80%;
+    overflow:   hidden }
+
+  img { max-width: 100% }
+  audio, video { width: 100% }
+}
+
+//
+// @import "ui-variables";
+// @field-key-descriptor: 'stateful.icon.';
+// @outer-space: 18vh;
+// @component-padding: 0.8em;
+// @header-height: 4em;
+// @footer-height: 4em;
+//
+// atom-panel.modal {
+//   left: 50vw !important;
+//
+// }
+//
+// .file-explorer.root {
+//   font-size: 1em;
+//   position:   relative;
+//   box-sizing: border-box;
+//   height:     100vh - @outer-space * 2;
+//
+//   .list-item {
+//     border-radius: @component-border-radius;
+//     cursor: pointer }
+//
+//   .list-item:hover {
+//     background: @background-color-selected !important }
+//
+//   .path {
+//     opacity:        0.5;
+//     font-weight:    500;
+//     font-size:      0.75em;
+//     letter-spacing: -0.05em }
+//
+//   .directory-content {
+//     overflow: auto;
+//     height:   auto;
+//     position: absolute;
+//     top:      @component-padding + @header-height;
+//     bottom:   @component-padding + @footer-height;
+//     left:     @component-padding;
+//     right:    @component-padding;
+//   }
+//
+//   .directory-view {
+//     position:   static;
+//     padding:    @component-padding;
+//     margin:     @component-padding;
+//     max-height: 100%;
+//
+//     &.list ol {
+//       display: block }
+//
+//     &.grid ol {
+//         display:         flex;
+//         flex-flow:       row wrap;
+//         align-items:     flex-start;
+//         justify-content: flex-start }
+//
+//     li {
+//       padding: ~"calc(0.5 * var(--list-item-text-size, 1em))";
+//       line-height: 1.4em;
+//       font-size: var(--list-item-text-size, 1em) }
+//
+//     &.grid ol li.list-item {
+//         flex:      1 1;
+//         width:     auto;
+//         overflow:  hidden;
+//         min-width: 12em }}
+//
+//   .close-icon {
+//     z-index:       1000;
+//     position:      absolute;
+//     padding:       0 !important;
+//     margin:        0 !important;
+//     top:           1em;
+//     right:         1em;
+//     width:         4em;
+//     height:        4em;
+//     line-height:   4em }
+//
+//   .close-icon::before {
+//     font-size:     24px;
+//     width:         inherit;
+//     height:        inherit;
+//     line-height:   inherit;
+//     border-radius: 50%;
+//     background:    @overlay-border-color;
+//     color:         @text-color;
+//     transition:    .2s all }
+//
+//   .close-icon:hover::before {
+//     color:         darken(@text-color, 24%);
+//     background:    lighten(@overlay-border-color, 5%) }
+//
+//   .btn-toolbar {
+//     position: absolute;
+//     padding:  @component-padding;
+//     margin:   0;
+//     bottom:   0;
+//     right:    0;
+//     left:     0;
+//     height:      5em;
+//     line-height: 2em;
+//
+//     .btn {
+//       line-height: 3em;
+//       height:      3em;
+//       margin:   0;
+//       top:      0;
+//       position:   static;
+//       box-sizing: border-box;
+//       display:    inline-block;
+//       vertical-align: middle;
+//     }
+//   }
+//
+//   .breadcrumbs {
+//     position:    absolute;
+//     top:         0;
+//     left:        0; //@component-padding;
+//     right:       0; //@component-padding;
+//     margin:      0;
+//     padding:     0;
+//     height:      @header-height;
+//     line-height: @header-height;
+//     display:     flex;
+//     flex-flow:   row nowrap;
+//     align-items: stretch;
+//     box-sizing:  border-box;
+//     overflow: hidden;
+//     justify-content: flex-start !important;
+//     border-radius: @component-border-radius;
+//
+//     li {
+//       cursor:   pointer;
+//       overflow: initial;
+//       position: relative;
+//       padding:  0 1em 0 4em;
+//       line-height:   inherit;
+//       box-sizing:    border-box;
+//       background:    @pane-item-background-color !important;
+//       border-radius: 0;
+//
+//       &:last-of-type {
+//         color: @text-color-highlight;}
+//
+//       &:last-of-type,
+//       &:hover {
+//         background: @background-color-selected !important }
+//
+//       &::after {
+//         content: "";
+//         display: block;
+//         position: absolute;
+//         border: 1px solid;
+//         transform: rotate(45deg) translateY(-73%);
+//         border-width: 1px 1px 0 0;
+//         width: 1em;
+//         height: 1em;
+//         top: 50%;
+//         left: 1em; }}}
+// }
+//
+//
+// atom-text-editor[id^=@{field-key-descriptor}] {
+//   cursor:        pointer !important;
+//   transition:    .3s background, color;
+//   font-family:   @font-family;
+//   background:    lighten(@base-background-color, 5%) !important;
+//
+//   &:hover {
+//     background:  lighten(@base-background-color, 10%) !important }
+//
+//   &::before {
+//     // content: attr(id);
+//     content:     "\f016";
+//     padding:     0 @component-padding / 2;
+//     font-family: 'Octicons Regular';
+//     display:     block }}

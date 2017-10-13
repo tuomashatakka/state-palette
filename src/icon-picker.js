@@ -3,18 +3,16 @@
 import { CompositeDisposable, Disposable } from 'atom'
 import { resolve, dirname } from 'path'
 import { FileIcons } from 'file-explorer'
-import FileExplorer from 'file-explorer'
+import browser from 'file-explorer'
 
 
 const pack = require('../package.json')
 
-let fileExplorer
-
-
-
 export function consumeFileIcons (service) {
 
-  const update = () => getFileExplorer()//.reload()
+  const update = () => {
+    // getFileExplorer()
+  }//.reload()
 
   FileIcons.setService(service)
   update()
@@ -51,52 +49,37 @@ export function openFile (uri) {
 
 
 
-export function openFileExplorer () {
-  let path = resolvePath()
-  return getFileExplorer().open(path)
-}
-
-
-
-export function getFileExplorer () {
-  if (!fileExplorer) {
-    let path = resolvePath()
-    fileExplorer = new FileExplorer({ path })
-  }
-  // console.log(fileExplorer)
-  return fileExplorer
-}
+// export function openFileExplorer () {
+//   let path = resolvePath()
+//   return browser.open(path)
+// }
+//
+//
+//
+// export function getFileExplorer () {
+//   browser.open()
+//   return browser
+// }
 
 
 
 export function observeIconSelectionFields () {
+
   let views = document.querySelectorAll('.item-views')
   let subscriptions = new CompositeDisposable()
-
   let setText = (element, path) => element.getModel ?
     element.getModel().setText(path) :
     element.value = path
 
-  let callback = (e) => {
+  let callback = async (e) => {
     let element = e.path.find(el => ['INPUT', 'LABEL', 'ATOM-TEXT-EDITOR'].indexOf(el.tagName) !== -1)
-    // console.info("element", element)
-    // console.log("path   ", ...e.path)
-    // console.log("event  ", e)
-    if (!element)
-      return
-    let id = element.getAttribute('id') || ''
-    if (!id || !id.startsWith(`${pack.name}.icon`))
+    let id = element && element.getAttribute('id') || ''
+    if (!(element && id && id.startsWith(`${pack.name}.icon`)))
       return
 
-    getFileExplorer()
-      .requestFile({})
-      .then(path => {
-        // console.info(path)
-        // console.info(element)
-        // console.info(setText)
-        setText(element, path)
-      })
-      // .catch(e => alert(e.message || e))
+    browser.requestFile()
+      .then(setText.bind(null, element))
+      .catch(err => atom.notifications.addError(`Error in file browser's callback (${err})`))
   }
 
   views.forEach(view => {
@@ -105,5 +88,6 @@ export function observeIconSelectionFields () {
     subscriptions.add(new Disposable(unbind))
     bind()
   })
+
   return subscriptions
 }
